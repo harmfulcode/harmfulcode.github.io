@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Harmful Code</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Harmful Code</a>
+    </div>
+  </nav>
+  <div class="container">
+    <br/>
+    <h2>Welcome, this page is auxiliary for the paper harmful code, here we display the results as well provide the datasets used.</h2>
+    <br/>
+    <br/>
+
+    <h3>Results RQ2 (Effectivity):</h3>
+    <style type="text/css">
+      table.tableizer-table {
+        font-size: 12px;
+        border: 1px solid #CCC; 
+        font-family: Arial, Helvetica, sans-serif;
+      } 
+      .tableizer-table td {
+        padding: 4px;
+        margin: 3px;
+        border: 1px solid #CCC;
+      }
+      .tableizer-table th {
+        background-color: #104E8B; 
+        color: #FFF;
+        font-weight: bold;
+      }
+    </style>
+    <table class="tableizer-table">
+    <thead><tr class="tableizer-firstrow"><th>Smell</th><th>Algorithm</th><th>Clean</th><th>Smells</th><th>Buggy</th><th>Harmful</th><th>Mean</th></tr></thead><tbody>
+     <tr><td>Long Parameter List</td><td>XGBClassifier</td><td>0,93</td><td>0,88</td><td>1,00</td><td>0,94</td><td>0,94</td></tr>
+     <tr><td>&nbsp;</td><td>SVC</td><td>0,60</td><td>0,70</td><td>0,65</td><td>0,42</td><td>0,59</td></tr>
+     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,25</td><td>0,77</td><td>0,67</td><td>0,71</td><td>0,60</td></tr>
+     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>0,78</td><td>0,67</td><td>0,81</td><td>0,53</td><td>0,70</td></tr>
+     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,50</td><td>0,83</td><td>0,67</td><td>0,60</td><td>0,65</td></tr>
+     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
+     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
+     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,91</td><td>0,75</td><td>1,00</td><td>0,73</td><td>0,85</td></tr>
+     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,92</td><td>0,92</td><td>1,00</td><td>1,00</td><td>0,96</td></tr>
+     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
+     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,86</td><td>0,62</td><td>0,87</td><td>0,87</td><td>0,80</td></tr>
+     <tr><td>Switch Statements</td><td>SGDClassifier</td><td>0,53</td><td>0,47</td><td>0,45</td><td>0,56</td><td>0,50</td></tr>
+     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>0,68</td><td>0,59</td><td>0,67</td><td>0,71</td><td>0,66</td></tr>
+     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,21</td><td>0,47</td><td>0,51</td><td>0,56</td><td>0,44</td></tr>
+     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>0,97</td><td>0,83</td><td>0,98</td><td>0,80</td><td>0,90</td></tr>
+     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,61</td><td>0,53</td><td>0,53</td><td>0,65</td><td>0,58</td></tr>
+     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,16</td><td>0,44</td><td>0,52</td><td>0,56</td><td>0,42</td></tr>
+     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,62</td><td>0,53</td><td>0,57</td><td>0,68</td><td>0,60</td></tr>
+     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>0,98</td><td>0,87</td><td>0,98</td><td>0,85</td><td>0,92</td></tr>
+     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,58</td><td>0,50</td><td>0,49</td><td>0,64</td><td>0,55</td></tr>
+     <tr><td>Deficient Encapsulation</td><td>XGBClassifier</td><td>0,81</td><td>0,88</td><td>0,85</td><td>0,82</td><td>0,84</td></tr>
+     <tr><td>&nbsp;</td><td>SVC</td><td>0,67</td><td>0,85</td><td>0,66</td><td>0,74</td><td>0,73</td></tr>
+     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,37</td><td>0,62</td><td>0,29</td><td>0,52</td><td>0,45</td></tr>
+     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>0,72</td><td>0,83</td><td>0,86</td><td>0,85</td><td>0,82</td></tr>
+     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,27</td><td>0,62</td><td>0,52</td><td>0,58</td><td>0,50</td></tr>
+     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>0,56</td><td>0,71</td><td>0,65</td><td>0,66</td><td>0,64</td></tr>
+     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,64</td><td>0,78</td><td>0,58</td><td>0,72</td><td>0,68</td></tr>
+     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,25</td><td>0,70</td><td>0,50</td><td>0,33</td><td>0,44</td></tr>
+     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,72</td><td>0,85</td><td>0,78</td><td>0,79</td><td>0,79</td></tr>
+     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>0,99</td><td>1,00</td><td>0,99</td><td>0,99</td></tr>
+     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,46</td><td>0,53</td><td>0,45</td><td>0,63</td><td>0,52</td></tr>
+     <tr><td>Insufficient Modularization</td><td>XGBClassifier</td><td>0,49</td><td>0,71</td><td>0,27</td><td>0,58</td><td>0,51</td></tr>
+     <tr><td>&nbsp;</td><td>SVC</td><td>0,51</td><td>0,76</td><td>0,38</td><td>0,59</td><td>0,56</td></tr>
+     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,41</td><td>0,67</td><td>0,37</td><td>0,25</td><td>0,42</td></tr>
+     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>0,49</td><td>0,74</td><td>0,31</td><td>0,57</td><td>0,53</td></tr>
+     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,39</td><td>0,71</td><td>0,43</td><td>0,58</td><td>0,53</td></tr>
+     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>0,99</td><td>0,98</td><td>0,99</td><td>0,97</td><td>0,98</td></tr>
+     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>1,00</td><td>0,97</td><td>1,00</td><td>0,97</td><td>0,98</td></tr>
+     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,37</td><td>0,73</td><td>0,34</td><td>0,53</td><td>0,49</td></tr>
+     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,51</td><td>0,74</td><td>0,36</td><td>0,57</td><td>0,54</td></tr>
+     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>0,97</td><td>1,00</td><td>0,97</td><td>0,99</td></tr>
+     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,42</td><td>0,97</td><td>0,42</td><td>0,54</td><td>0,59</td></tr>
+     <tr><td>Magic Number</td><td>XGBClassifier</td><td>0,96</td><td>0,99</td><td>0,97</td><td>0,98</td><td>0,98</td></tr>
+     <tr><td>&nbsp;</td><td>SVC</td><td>0,52</td><td>0,74</td><td>0,56</td><td>0,68</td><td>0,63</td></tr>
+     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,52</td><td>0,68</td><td>0,38</td><td>0,38</td><td>0,49</td></tr>
+     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>1,00</td><td>0,99</td><td>1,00</td><td>0,99</td><td>0,99</td></tr>
+     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,20</td><td>0,63</td><td>0,58</td><td>0,50</td><td>0,48</td></tr>
+     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>0,60</td><td>0,67</td><td>0,59</td><td>0,66</td><td>0,63</td></tr>
+     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,95</td><td>0,97</td><td>0,95</td><td>0,96</td><td>0,96</td></tr>
+     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,17</td><td>0,53</td><td>0,43</td><td>0,51</td><td>0,41</td></tr>
+     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,80</td><td>0,91</td><td>0,79</td><td>0,86</td><td>0,84</td></tr>
+     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>0,99</td><td>1,00</td><td>0,99</td><td>1,00</td></tr>
+     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,50</td><td>0,71</td><td>0,62</td><td>0,75</td><td>0,65</td></tr>
+     <tr><td>Unutilized Abstraction</td><td>XGBClassifier</td><td>0,69</td><td>0,85</td><td>0,74</td><td>0,69</td><td>0,74</td></tr>
+     <tr><td>&nbsp;</td><td>SVC</td><td>0,52</td><td>0,73</td><td>0,52</td><td>0,57</td><td>0,58</td></tr>
+     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,35</td><td>0,66</td><td>0,54</td><td>0,48</td><td>0,51</td></tr>
+     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>0,99</td><td>0,98</td><td>0,99</td><td>0,98</td><td>0,99</td></tr>
+     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,20</td><td>0,63</td><td>0,58</td><td>0,50</td><td>0,48</td></tr>
+     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>0,99</td><td>0,98</td><td>0,99</td><td>0,98</td><td>0,98</td></tr>
+     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,61</td><td>0,81</td><td>0,69</td><td>0,67</td><td>0,70</td></tr>
+     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,17</td><td>0,53</td><td>0,43</td><td>0,51</td><td>0,41</td></tr>
+     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,83</td><td>0,91</td><td>0,88</td><td>0,86</td><td>0,87</td></tr>
+     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>0,99</td><td>0,99</td><td>1,00</td><td>0,99</td><td>0,99</td></tr>
+     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,02</td><td>0,67</td><td>0,55</td><td>0,46</td><td>0,42</td></tr>
+     <tr><td>Broken Hierarchy</td><td>XGBClassifier</td><td>0,97</td><td>0,97</td><td>0,98</td><td>0,97</td><td>0,97</td></tr>
+     <tr><td>&nbsp;</td><td>SVC</td><td>0,51</td><td>0,76</td><td>0,49</td><td>0,58</td><td>0,58</td></tr>
+     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>0,99</td><td>1,00</td></tr>
+     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,27</td><td>0,66</td><td>0,42</td><td>0,57</td><td>0,48</td></tr>
+     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>0,99</td><td>1,00</td></tr>
+     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,69</td><td>0,85</td><td>0,80</td><td>0,78</td><td>0,78</td></tr>
+     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,26</td><td>0,65</td><td>0,31</td><td>0,52</td><td>0,43</td></tr>
+     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>1,00</td><td>0,99</td><td>1,00</td><td>0,99</td><td>0,99</td></tr>
+     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>0,99</td><td>1,00</td><td>0,99</td><td>0,99</td></tr>
+     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,60</td><td>0,77</td><td>0,66</td><td>0,70</td><td>0,68</td></tr>
+     <tr><td>Complex Method</td><td>XGBClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
+     <tr><td>&nbsp;</td><td>SVC</td><td>0,71</td><td>0,82</td><td>0,64</td><td>0,67</td><td>0,71</td></tr>
+     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,70</td><td>0,88</td><td>0,82</td><td>0,73</td><td>0,78</td></tr>
+     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
+     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,33</td><td>0,73</td><td>0,65</td><td>0,53</td><td>0,56</td></tr>
+     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,87</td><td>0,82</td><td>0,85</td><td>0,67</td><td>0,80</td></tr>
+     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,33</td><td>0,71</td><td>0,65</td><td>0,60</td><td>0,57</td></tr>
+     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,75</td><td>0,78</td><td>0,83</td><td>0,70</td><td>0,77</td></tr>
+     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
+     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,65</td><td>0,85</td><td>0,75</td><td>0,55</td><td>0,70</td></tr>
+     <tr><td>Cyclic-Dependent Modularization</td><td>XGBClassifier</td><td>0,96</td><td>0,99</td><td>1,00</td><td>1,00</td><td>0,99</td></tr>
+     <tr><td>&nbsp;</td><td>SVC</td><td>0,77</td><td>0,86</td><td>0,67</td><td>0,57</td><td>0,72</td></tr>
+     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,50</td><td>0,53</td><td>0,53</td><td>0,50</td><td>0,51</td></tr>
+     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>0,75</td><td>0,82</td><td>0,83</td><td>0,82</td><td>0,81</td></tr>
+     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,29</td><td>0,77</td><td>0,52</td><td>0,48</td><td>0,52</td></tr>
+     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
+     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,96</td><td>0,99</td><td>0,94</td><td>1,00</td><td>0,97</td></tr>
+     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,44</td><td>0,74</td><td>0,35</td><td>0,57</td><td>0,53</td></tr>
+     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,58</td><td>0,83</td><td>0,83</td><td>1,00</td><td>0,81</td></tr>
+     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
+     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,54</td><td>0,81</td><td>0,82</td><td>0,78</td><td>0,74</td></tr>
+     <tr><td>Empty catch clause</td><td>XGBClassifier</td><td>0,81</td><td>0,77</td><td>0,75</td><td>0,79</td><td>0,78</td></tr>
+     <tr><td>&nbsp;</td><td>SVC</td><td>0,68</td><td>0,77</td><td>0,63</td><td>0,71</td><td>0,70</td></tr>
+     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,71</td><td>0,90</td><td>0,39</td><td>0,48</td><td>0,62</td></tr>
+     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>0,75</td><td>0,86</td><td>0,78</td><td>0,81</td><td>0,80</td></tr>
+     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,43</td><td>0,56</td><td>0,15</td><td>0,51</td><td>0,41</td></tr>
+     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>0,99</td><td>0,99</td><td>0,98</td><td>0,98</td><td>0,99</td></tr>
+     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,96</td><td>0,97</td><td>0,96</td><td>0,94</td><td>0,96</td></tr>
+     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,23</td><td>0,52</td><td>0,17</td><td>0,46</td><td>0,34</td></tr>
+     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,79</td><td>0,88</td><td>0,78</td><td>0,80</td><td>0,81</td></tr>
+     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>0,98</td><td>0,98</td><td>0,98</td><td>0,98</td><td>0,98</td></tr>
+     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,73</td><td>0,65</td><td>0,70</td><td>0,59</td><td>0,67</td></tr>
+     <tr><td>Long Identifier</td><td>XGBClassifier</td><td>0,81</td><td>0,77</td><td>0,75</td><td>0,79</td><td>0,78</td></tr>
+     <tr><td>&nbsp;</td><td>SVC</td><td>0,96</td><td>0,96</td><td>0,92</td><td>0,92</td><td>0,94</td></tr>
+     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,60</td><td>0,46</td><td>0,37</td><td>0,46</td><td>0,47</td></tr>
+     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>1,00</td><td>0,96</td><td>1,00</td><td>1,00</td><td>0,99</td></tr>
+     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,34</td><td>0,26</td><td>0,43</td><td>0,47</td><td>0,38</td></tr>
+     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>1,00</td><td>0,99</td><td>1,00</td><td>0,98</td><td>0,99</td></tr>
+     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,88</td><td>0,84</td><td>0,81</td><td>0,88</td><td>0,85</td></tr>
+     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,42</td><td>0,48</td><td>0,53</td><td>0,32</td><td>0,44</td></tr>
+     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>1,00</td><td>0,98</td><td>1,00</td><td>0,98</td><td>0,99</td></tr>
+     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>0,98</td><td>2,00</td><td>0,98</td><td>1,24</td></tr>
+     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,79</td><td>0,67</td><td>0,63</td><td>0,69</td><td>0,69</td></tr>
+     <tr><td>Simplified Ternary</td><td>XGBClassifier</td><td>0,86</td><td>0,98</td><td>0,90</td><td>0,88</td><td>0,90</td></tr>
+     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,83</td><td>0,92</td><td>0,74</td><td>0,83</td><td>0,83</td></tr>
+     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
+     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,25</td><td>0,75</td><td>0,67</td><td>0,71</td><td>0,60</td></tr>
+     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,83</td><td>0,92</td><td>0,74</td><td>0,83</td><td>0,83</td></tr>
+     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,62</td><td>0,83</td><td>0,74</td><td>0,67</td><td>0,71</td></tr>
+     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
+     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
+     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,50</td><td>0,88</td><td>0,93</td><td>0,74</td><td>0,76</td></tr>
+    </tbody></table>
+
+    </br>
+    </br>
+    <h3>Software Metrics (CK):</h3>
+    <style type="text/css">
+      table.tableizer-table {
+        font-size: 12px;
+        border: 1px solid #CCC; 
+        font-family: Arial, Helvetica, sans-serif;
+      } 
+      .tableizer-table td {
+        padding: 4px;
+        margin: 3px;
+        border: 1px solid #CCC;
+      }
+      .tableizer-table th {
+        background-color: #104E8B; 
+        color: #FFF;
+        font-weight: bold;
+      }
+    </style>
+    <table class="tableizer-table">
+    <thead><tr class="tableizer-firstrow"><th>Name</th><th>Description</th></tr></thead><tbody>
+     <tr><td>CBO (Coupling between objects)</td><td>Counts the number of dependencies a class has. The tools checks for any type used in the entire class (field declaration, method return types, variable declarations, etc). It ignores dependencies to Java itself (e.g. java.lang.String).</td></tr>
+     <tr><td>DIT (Depth Inheritance Tree)</td><td>It counts the number of "fathers" a class has. All classes have DIT at least 1 (everyone inherits java.lang.Object). In order to make it happen, classes must exist in the project (i.e. if a class depends upon X which relies in a jar/dependency file, and X depends upon other classes, DIT is counted as 2).</td></tr>
+     <tr><td>Number of fields</td><td>Counts the number of fields. Specific numbers for total number of fields, static, public, private, protected, default, final, and synchronized fields.</td></tr>
+     <tr><td>Number of methods</td><td>Counts the number of methods. Specific numbers for total number of methods, static, public, abstract, private, protected, default, final, and synchronized methods.</td></tr>
+     <tr><td>NOSI (Number of static invocations)</td><td>Counts the number of invocations to static methods. It can only count the ones that can be resolved by the JDT.</td></tr>
+     <tr><td>RFC (Response for a Class)</td><td>Counts the number of unique method invocations in a class. As invocations are resolved via static analysis, this implementation fails when a method has overloads with same number of parameters, but different types.</td></tr>
+     <tr><td>WMC (Weight Method Class) or McCabe's complexity</td><td>It counts the number of branch instructions in a class.</td></tr>
+     <tr><td>LOC (Lines of code)</td><td>It counts the lines of count, ignoring empty lines.</td></tr>
+     <tr><td>LCOM (Lack of Cohesion of Methods)</td><td>Calculates LCOM metric. This is the very first version of metric, which is not reliable. LCOM-HS can be better (hopefully, you will send us a pull request).</td></tr>
+     <tr><td>Quantity of returns</td><td>The number of return instructions.</td></tr>
+     <tr><td>Quantity of loops</td><td>The number of loops (i.e., for, while, do while, enhanced for).</td></tr>
+     <tr><td>Quantity of comparisons</td><td>The number of comparisons (i.e., ==).</td></tr>
+     <tr><td>Quantity of try/catches</td><td>The number of try/catches.</td></tr>
+     <tr><td>Quantity of parenthesized expressions</td><td>The number of expressions inside parenthesis.</td></tr>
+     <tr><td>String literals</td><td>The number of string literals (e.g., "John Doe"). Repeated strings count as many times as they appear.</td></tr>
+     <tr><td>Quantity of Number</td><td>The number of numbers (i.e., int, long, double, float) literals.</td></tr>
+     <tr><td>Quantity of Math Operations</td><td>The number of math operations (times, divide, remainder, plus, minus, left shit, right shift).</td></tr>
+     <tr><td>Quantity of Variables</td><td>Number of declared variables.</td></tr>
+     <tr><td>Max nested blocks</td><td>The highest number of blocks nested together.</td></tr>
+     <tr><td>Quantity of Anonymous classes, subclasses, and lambda expressions</td><td>The Quantity of Anonymous classes, subclasses, and lambda expressions.</td></tr>
+     <tr><td>Number of unique words</td><td>Number of unique words in the source code. See WordCounter class for details on the implementation.</td></tr>
+     <tr><td>Usage of each variable</td><td>How much each variable was used inside each method.</td></tr>
+     <tr><td>Usage of each field</td><td>How much each field was used inside each method.</td></tr>
+    </tbody></table>
+    <p>Those metrics were collected using the tool CK: <a href="https://github.com/mauricioaniche/ck">https://github.com/mauricioaniche/ck</a></p>
+
+    </br>
+    </br>
+    <h3>Developers Metrics:</h3>
+    <style type="text/css">
+      table.tableizer-table {
+        font-size: 12px;
+        border: 1px solid #CCC; 
+        font-family: Arial, Helvetica, sans-serif;
+      } 
+      .tableizer-table td {
+        padding: 4px;
+        margin: 3px;
+        border: 1px solid #CCC;
+      }
+      .tableizer-table th {
+        background-color: #104E8B; 
+        color: #FFF;
+        font-weight: bold;
+      }
+    </style>
+    <table class="tableizer-table">
+    <thead><tr class="tableizer-firstrow"><th>Name</th><th>Type</th><th>Tool Used</th><th>Description</th></tr></thead><tbody>
+     <tr><td>Number of Commits (NC)</td><td>Developers' Experience</td><td>PyDriller</td><td>this metric represents the number of commits authored by a developer;</td></tr>
+     <tr><td>Number of Active Days in Project (NADP)</td><td>Developers' Experience</td><td>PyDriller</td><td>this metric indicates how many days a developer has been active, i.e., committing;</td></tr>
+     <tr><td>Number of Days in Project (NDP)</td><td>Developers' Experience</td><td>PyDriller</td><td>this metric counts the number of days that a developer has been associated to a project, independently if he is contributing or not;</td></tr>
+     <tr><td>Number of issues Activities (NIA)</td><td>Developers' Experience</td><td>GitHub API</td><td>this metric measures the number of issues opened or closed by a developer;</td></tr>
+     <tr><td>Number of Pull Requests Activities (NPRA)</td><td>Developers' Experience</td><td>GitHub API</td><td>this metric measures the number of pull requests opened or closed by a developer;</td></tr>
+     <tr><td>Number of Tests Included (TI)</td><td>Technical Contribution Norms</td><td>PyDriller</td><td>this metric measures the quantity of commits that contain tests. To extract it, we adopted the procedure defined by [18]. First, we retrieve all the files modified in a commit authored by a developer. Then, we check how many files contain the "test" word in its pathname;</td></tr>
+     <tr><td>Median of Modified Files (MMF)</td><td>Technical Contribution Norms</td><td>PyDriller</td><td>this metric measures the median of modified files among all the commits authored by a developer;</td></tr>
+     <tr><td>Median of Lines Changed (MLC)</td><td>Technical Contribution Norms</td><td>PyDriller</td><td>this metric represents the median of changed lines among all the commits authored by a developer. A changed line can be an addition or a deletion in a commit;</td></tr>
+     <tr><td>Number of Followers (NF)</td><td>General Community Status</td><td>WebCrawler</td><td>this metric represents the number of followers that a developer has on GitHub;</td></tr>
+     <tr><td>Number of Public Repository (NPR)</td><td>General Community Status</td><td>WebCrawler</td><td>this metric counts the number of public repositories owned by a developer on GitHub;</td></tr>
+     <tr><td>Number of Public Gists (NPG)</td><td>General Community Status</td><td>WebCrawler</td><td>this metric represents the number of public Gists 2 owned by a developer. A Gist is a tool designed to share single files, parts of source code, or full applications created by a developer. Such tool may be very important to stimulate the reuse of software artifacts.</td></tr>
+    </tbody></table>
+    
+    <p>PyDriller: <a href="https://github.com/ishepard/pydriller">https://github.com/ishepard/pydriller</a></p>
+    <p>GitHub API: <a href="https://developer.github.com/v3/">https://developer.github.com/v3/</a></p>
+
+    <br/>
+    <br/>
+    <h3>Files:</h3>
+    <p>The hyperparams and results for rq2 is available here: <a href="https://drive.google.com/open?id=1eitT9BpOcV8daqbm9EYmwcARKNdcRlQG">https://drive.google.com/open?id=1eitT9BpOcV8daqbm9EYmwcARKNdcRlQG</a></p>
+    <p>The dataset is available here: <a href="https://drive.google.com/open?id=1ISYmXE5U9PPNb2eRKo4g6--7AraQrBtJ">https://drive.google.com/open?id=1ISYmXE5U9PPNb2eRKo4g6--7AraQrBtJ</a></p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2">
+            
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Harmful Code 2019. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
