@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Harmful Code</title>
+  <title>Are Code Smells Always Harmful? Understanding and Classifying Code Harmfulness</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,16 +28,162 @@
   <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Harmful Code</a>
+      <a class="navbar-brand" href="#">Are Code Smells Always Harmful? Understanding and Classifying Code Harmfulness</a>
     </div>
   </nav>
   <div class="container">
     <br/>
-    <h2>Welcome, this page is auxiliary for the paper harmful code, here we display the results as well provide the datasets used.</h2>
+    <h2>Welcome, this page is auxiliary for the paper: Are Code Smells Always Harmful? Understanding and Classifying Code Harmfulness, here we display the results as well provide the datasets used.</h2>
     <br/>
     <br/>
+    <h3>Results RQ2 Survey Results:</h3>
+    <img src="img/survey1.PNG"/>
+    <img src="img/survey2.PNG"/>
+    <img src="img/survey3.PNG"/>
+    <img src="img/survey4.PNG"/>
+    <img src="img/survey5.PNG"/>
+    <h5>6 - Could you please justify your answer to question 5?</h5>
+    <table class="tableizer-table">
+      <tr><td class="tg-0lax">Code smells often indicate or lead to bigger problems. Those bigger problems can make a code base fragile, difficult to maintain, and prone to errors.</td></tr>
+      <tr><td class="tg-0lax">It makes it difficult to read and maintain your code base.</td></tr>
+      <tr><td class="tg-0lax">It difficults the readability of the code, that can lead to the introductions of bugs.</td></tr>
+      <tr><td class="tg-0lax">They tend to indicare over complication or lacking SOLID principals.</td></tr>
+      <tr><td class="tg-0lax">Code smells have impacts on code maintainability, especially when the code is not clear what should be done. This makes the misinterpretation of what the code should do, and if there is no automated testing to guide the developer on what the code should do, we often have the rework to rewrite all the functionality, because it is simpler to develop from scratch. that improve a code snippet.</td></tr>
+      <tr><td class="tg-0lax">It can impact very badly in the long run of software development, causing degration of code quality.</td></tr>
+      <tr><td class="tg-0lax">Code smell is a way to detect bad decisions that can impact directly the runtime and the business around the software.</td></tr>
+      <tr><td class="tg-0lax">This can hardly be evaluated out of context. Some harmfulness is caused by the broken window effect anyway.</td></tr>
+      <tr><td class="tg-0lax">Smells are indications something MIGHT be wrong and it's LIKELY that you are violating some aspect of good OO design. But then again maybe not.</td></tr>
+      <tr><td class="tg-0lax">It usually impacts on maintainability the presence of code smells, when the time of modify the existing code arrives, code smells make that changes easy to break the code. I don't mark this as very harmful because it is preferable a well tested code with some code smells that a non tested software without code smells.</td></tr>
+      <tr><td class="tg-0lax">Code smell is an item for have a technical debt. Miss unit test is another item being harmful.</td></tr>
+      <tr><td class="tg-0lax">It will have direct consequences in quality, maintenance if the smell is not fixed.</td></tr>
+      <tr><td class="tg-0lax">In a common basis we work with scalable and mantainable software, so any code smell probably means, in future, a huge refactor. There are worse code smells like the blob and stuffs, but any of them I consider a problem.</td></tr>
+      <tr><td class="tg-0lax">They always represent a relevant risk to the maintenance and, most of them, to future implementations, demanding a lot of time with refactor work.</td></tr>
+      <tr><td class="tg-0lax">If this problem isn't dealt with it'll spread, the cost and effort to fix it'll increase.</td></tr>
+      <tr><td class="tg-0lax">At the first moment, this wouldn't a big problem, but in the future, it will cause problems to maintain the application.</td></tr>
+      <tr><td class="tg-0lax">It usually means you are working with people who don't care about the quality of the work or is in a unconscious incompetence level, which means that they think they know what they are doing but they are clueless.</td></tr>
+      <tr><td class="tg-0lax">They increase the complexity of the codebase, and the cognitive load on engineers. This leads to decreased productivity and increased bugs.</td></tr>
+      <tr><td class="tg-0lax">Code smells make software readability and comprehensibility worse. That itself already degrade software quality. Moreover, code smells can make it harder to find bugs in the software, since you can only find bugs in code that you can read, and understand.</td></tr>
+      <tr><td class="tg-0lax">Code smells tend to make code understanding difficult and software maintenance very difficult.</td></tr>
+      <tr><td class="tg-0lax">Your code is going to be confusing to read.</td></tr>
+      <tr><td class="tg-0lax">Long methods require more time for maintenance and many times, require devs with more experience.</td></tr>
+      <tr><td class="tg-0lax">Code smells usually indicates that something is wrong. When you have, for example, long methods, code readability decreases and therefore system maintenance is adversely affected.</td></tr>
+      <tr><td class="tg-0lax">Complex and long methods are difficult to manage. I like to split complexity in smaller chunks.</td></tr>
+      <tr><td class="tg-0lax">I do believe that code smells are harmful, but not usually harmful. There are specific cases that make them harmful, for example, when specific types of smells (or from similar categories) co-occur together. For instance, if a class contains a God Class, Intensive Coupling (or Dispersed Coupling) and more than one Feature Envy, in this case, the smells are harmful since they indicate that the class has a bigger structural problem. On the other hand, there are cases that smells are not harmful, for example, when a class has Lazy Class.</td></tr>
+      <tr><td class="tg-0lax">I believe that if you have unit test around it, it'd be Harmful or even Somewhat Harmful. Usually code smell is easy to be refactored when you have unit test.</td></tr>
+      <tr><td class="tg-0lax">If I need to improve, I can introduce a bug.</td></tr>
+      <tr><td class="tg-0lax">A piece of bad code tend to degrade fast after a lot of time without proper refactoring/maintenance, leading to a costly code evolution in the future.</td></tr>
+      <tr><td class="tg-0lax">I don't think that there are a mandatory relation between code smells and the harmfulness. But, naturally, in some cases code smells could contains characteristics of harmful code.</td></tr>
+      <tr><td class="tg-0lax">Some code can be ugly, but it works.</td></tr>
+      <tr><td class="tg-0lax">Nem todos core smells são tão nocivos.</td></tr>
+      <tr><td class="tg-0lax">It is difficult to introduce changes in the business logic.</td></tr>
+      <tr><td class="tg-0lax">The presence of code smell could increase code maintenance work.</td></tr>
+      <tr><td class="tg-0lax">Code smell instances eventually hinder some major development tasks, especially when it comes to maintaining and evolving systems. I've had a hard time to read and change some large classes, complex methods, and intrincate hierarchies as well.</td></tr>
+    </table>
+    <img src="img/survey7.PNG"/>
+    <h5>8 - Could you please describe Code Smells Detection tools that you have used?</h5>
+    <table class="tableizer-table">
+      <tr><td class="tg-0lax">FindBugs, PMD, SonarQube</td></tr>
+      <tr><td class="tg-0lax">Sonar, tslint</td></tr>
+      <tr><td class="tg-0lax">PMD and JDeodorant</td></tr>
+      <tr><td class="tg-0lax">Tools for detecting code smells are important because humans are subject to failure, some practices that are clearly seen as code smells can always be detected by tools. Another point is that when you work on a project on your own, reviewing your own code for code smells has a much smaller impact than someone else's review, and puts a tool to help you with code review helps in those cases.</td></tr>
+      <tr><td class="tg-0lax">At some time of de development I consider checking all the project in order to find possible code smells. The problem is still the lacking of good software tools to do so.</td></tr>
+      <tr><td class="tg-0lax">Sonarqube, findbugs</td></tr>
+      <tr><td class="tg-0lax">Reek</td></tr>
+      <tr><td class="tg-0lax">Sonar, Findbugs, jacoco</td></tr>
+      <tr><td class="tg-0lax">Sonar, pmd, owasp, findbugs, vpav</td></tr>
+      <tr><td class="tg-0lax">Rubocop, Reek</td></tr>
+      <tr><td class="tg-0lax">PMD, CheckStyle</td></tr>
+      <tr><td class="tg-0lax">Idea, SonarQube, Js/TsLint are the ones i feel more confortable</td></tr>
+      <tr><td class="tg-0lax">Sonarqube and Sonarlint</td></tr>
+      <tr><td class="tg-0lax">Sometimes the changed code in a pull request doesn't have a full picture like duplication and etc.</td></tr>
+      <tr><td class="tg-0lax">Analyze Inspect Code - Android Studio</td></tr>
+      <tr><td class="tg-0lax">Most of themwere used as part of a CI solution, like sonar, and works pointing out code smells during the development process and suggesting improvements to solve them.</td></tr>
+      <tr><td class="tg-0lax">Rubocop, Pronto and Merge Requests with my team</td></tr>
+      <tr><td class="tg-0lax">Static code analyzers</td></tr>
+      <tr><td class="tg-0lax">I have read research on automatic code smell detection, but I don't recall any tool names.</td></tr>
+      <tr><td class="tg-0lax">It is not always in the development of the program to give yourself a macro view of it, so it is likely that some code smell will not be identified.</td></tr>
+      <tr><td class="tg-0lax">PMD</td></tr>
+      <tr><td class="tg-0lax">I've used in my career some tools to help me with code smells, like Checkstyle and more recently, we use Sonar.</td></tr>
+      <tr><td class="tg-0lax">After long years of experience I directly avoid all possible smells. For what I don't see at the first time there will be a code refactory.</td></tr>
+      <tr><td class="tg-0lax">I use one that has been developed in the research group that I work with. The name is Organic 2.0</td></tr>
+      <tr><td class="tg-0lax">For Java I've used PMD and since I use IntelliJ IDEA, it has embedded static code analysis in it</td></tr>
+      <tr><td class="tg-0lax">Linters in general</td></tr>
+      <tr><td class="tg-0lax">lints, code formatters, code analyzers.</td></tr>
+      <tr><td class="tg-0lax">In the past I have used some tools such as PMD and JDeodorant. In both cases, the tools were used in non-graphical ways, just for research purposes.</td></tr>
+      <tr><td class="tg-0lax">Sonarqube</td></tr>
+      <tr><td class="tg-0lax">Sonar and ESLint</td></tr>
+      <tr><td class="tg-0lax">I've published a literature review on these tools at EASE 2016 ("A review-based comparative study of bad smell detection tools"). Part of my work was using tools like PMD, inFusion, JDeodorant, and etc. I've also used some of these tools to detect smells for study purposes. But, to be honest, mostly I've written my own detection scripts to run them on spreadsheets with code metrics data... LOL</td></tr>
+    </table>
+    <img src="img/survey9.PNG"/>
+    <h5>10 - Could you please justify your answer to question 9?</h5>
+    <table class="tableizer-table">
+      <tr><td class="tg-0lax">I refactor to improve reusability and reduce fragile or error-prone code. How the code got to that state is irrelevant.</td></tr>
+      <tr><td class="tg-0lax">Code smells should be found by static analysis tools or reviewer.</td></tr>
+      <tr><td class="tg-0lax">Buggy code is something that already problematic to the software, so should be prioritized.</td></tr>
+      <tr><td class="tg-0lax">You may have code that has code smells, but if they have good automated testing, refactoring becomes a simpler and less risky task. And there are different code smells, some impact the readability of implementation details more, if the public interface of the code is well written, but the internal code is poorly made, refactoring becomes even simpler. The problem is more in code than badly done, do not work. We should prioritize covering them with tests, then adjust them as guided by the tests discovering current code problems, then refactoring them.</td></tr>
+      <tr><td class="tg-0lax">I always consider improving the code quality when fixing a bug.</td></tr>
+      <tr><td class="tg-0lax">We usually run sonarqube reports and try to fix all the warnings that are found.</td></tr>
+      <tr><td class="tg-0lax">Not all the problems are solved in a refactoring session, bug is your mission to deliver the best in that situation</td></tr>
+      <tr><td class="tg-0lax">Short term business value. Smells are best addressed by coaching and boy scout approaches.</td></tr>
+      <tr><td class="tg-0lax">Since a smell only indicates there might be a problem and harmful code definitely does have a problem, you should look at that first.</td></tr>
+      <tr><td class="tg-0lax">I would fix all of it but time is limited so priorities have to be set.</td></tr>
+      <tr><td class="tg-0lax">The question is really tricky because you will refactor always the worst part, otherwise the code will not work. I see what do you want to achieve with that question but the way you are asking that is really biased.</td></tr>
+      <tr><td class="tg-0lax">Code blocks that already have a bug and have code smell is much more problematic than a code smell.</td></tr>
+      <tr><td class="tg-0lax">Always leave the code better than before.</td></tr>
+      <tr><td class="tg-0lax">When touching on working code the risk to ruin something is greater than fixing already buggy code.</td></tr>
+      <tr><td class="tg-0lax">I usually look for problems that already exist or might become one in the future</td></tr>
+      <tr><td class="tg-0lax">Working on code smells means working on the prevention of most of bugs that could appear, so worry only about those who already have bugs attached too it is never enough.</td></tr>
+      <tr><td class="tg-0lax">All information is important.</td></tr>
+      <tr><td class="tg-0lax">because if you are refactoring you are trying to improve the code. Does not matter if it's horrible or somewhat acceptable.</td></tr>
+      <tr><td class="tg-0lax">Any improvements are worth the time.</td></tr>
+      <tr><td class="tg-0lax">I usually don't refactor buggy code when a bug is identified; I only fix it asap and leave possible refactoring for later. I apply a refactoring usually when the code is baddly structured. If a bug is found in the middle of the refactoring, I will be fixed also during the refactoring process, asap.</td></tr>
+      <tr><td class="tg-0lax">Codes that allow bugs are problematic because they are harmful to execution.</td></tr>
+      <tr><td class="tg-0lax">Refactoring process could insert new bugs, so I avoid to refactor code that it is working.</td></tr>
+      <tr><td class="tg-0lax">When refactor source vocês, we focus on long and complex codes, to facilitate future maintenance or upgrades.</td></tr>
+      <tr><td class="tg-0lax">When my team works with software maintenance, we usually get a problem and start reviewing it. Usually this problem represents a bug; therefore, we have the opportunity to improve some parts of the code.</td></tr>
+      <tr><td class="tg-0lax">In the real life we have to stay into the budget: so when, for whatever reason, I put my hand on a piece of code I try to fix/improve it.</td></tr>
+      <tr><td class="tg-0lax">I usually refactor my code when it is hard to understand/maintain, however, if I have to prioritize refactorings, I refactor elements that contain bugs and have smells. Since I'm already refactoring the code to get rid of the bug, I take the opportunity to remove the smell as well. The goal is to kill two birds with one stone.</td></tr>
+      <tr><td class="tg-0lax">I usually give priority to duplication, shotgun surgery, large class, naming, long methods, too many params.</td></tr>
+      <tr><td class="tg-0lax">In general, I tend to fix the bug (first) as fast as possible, which means I do not think about quality code at first.</td></tr>
+      <tr><td class="tg-0lax">Economics. Buggy code have hard effects on end user which tend to abandon your product after working for some time with a bug.</td></tr>
+      <tr><td class="tg-0lax">When refactoring, it is ideal to deal with all modules of the code, but due to some limitations, such as time, it is most important to look at fragile parts as harmful code.</td></tr>
+      <tr><td class="tg-0lax">Segundo critério será harmful.</td></tr>
+      <tr><td class="tg-0lax">There is no priority.</td></tr>
+      <tr><td class="tg-0lax">Código bem escrito evita Code smells.</td></tr>
+      <tr><td class="tg-0lax">My academic background made me see refactorings as means to "clean the house" in terms of bad code structures rather than means to actually fix bugs. Eventually, refactorings can help fix a bug. Nevertheless, as a practitioner, I've tried the most to avoid refactoring buggy code elements. These elements should be changed only if necessary; otherwise, the damage can get worse (other bugs may emerge).</td></tr>
+    </table>
+    <h5>11 - Are you aware of some issues in which code smells are harmful to the software quality? If yes, could you please describe it below or put the issue link?</h5>
+    <table class="tableizer-table">
+      <tr><td class="tg-0lax">Code smells often indicate or lead to bigger problems. Those bigger problems can make a code base fragile, difficult to maintain, and prone to errors.</td></tr>
+      <tr><td class="tg-0lax">Yes. Security or maintenance issues.</td></tr>
+      <tr><td class="tg-0lax">Most of the code smells are dangerous in their own ways. They usually they make the codebase hard to maintain and modify. Or they introduce subtle bugs in certain scenarios.</td></tr>
+      <tr><td class="tg-0lax">Sometimes it can lead to early complex architecture.</td></tr>
+      <tr><td class="tg-0lax">Bad decisions of choosing patterns, the false senior developer (probably a old people in your team that you trust in a period, and when you see the disaster are made). In terms of code, inheritance, bad encapsulation, repeating yourself.</td></tr>
+      <tr><td class="tg-0lax">Misunderstandings waiting to happen.</td></tr>
+      <tr><td class="tg-0lax">Maintainability, readability.</td></tr>
+      <tr><td class="tg-0lax">As i said before, maintainability, you can code with code smells if it is a single person codebase because you know what have you done. But when there are more developers involved in a development, code smells make then doubt about the intentions or purposes of that code smell, is it there otherwise code doesn't work?, those kind of questions make developers lose time and commit errors.</td></tr>
+      <tr><td class="tg-0lax">Coupled code, fuzzy parameters names.</td></tr>
+      <tr><td class="tg-0lax">Maintenance.</td></tr>
+      <tr><td class="tg-0lax">God classes are the first example that comes to my mind. It doesn't have separation of concerns, do more than one job, if maintaining that code you will affect many points...there are many quality risks. It is even hard to focus the quality assurance in just one part of the application, forcing you to do a full regression.</td></tr>
+      <tr><td class="tg-0lax">Yes. It makes code harder to read and understand and this contributes to more bugs and more time debugging.</td></tr>
+      <tr><td class="tg-0lax">Code smells use to decrease code readability.</td></tr>
+      <tr><td class="tg-0lax">Yes. Sometimes, when you have a method or function too long, normally this is related to centrilize many tasks in only one place and that method/function is being responsible for activities that actually shouldn't be its responsibility. So, this decreases the software quality in terms of future maintenance or possible software evolution.</td></tr>
+      <tr><td class="tg-0lax">Efficiency, security and maintainability.</td></tr>
+      <tr><td class="tg-0lax">Fault proneness, software degradation, Error proneness, maintanance dificulty.</td></tr>
+      <tr><td class="tg-0lax">Sure, and they are many. As stated in Q.6, I've struggled to read and change smelly code many times before. Too messy code is irritating, right? Once I had to prepare a project for migration across programming languages. It was a hell of a work to read some pretty large classes with dozens of lenghy and complex methods. And what can I say about the uncountable dependencies among classes that made it hard to reorganize the code every now and then?</td></tr>
+    </table>
+    <h5>12 - Please, let us know if you have any additional comments about Harmful Code.</h5>
+    <table class="tableizer-table">
+      <tr><td class="tg-0lax">If you have a Sonarqube around, and code reviews in the delivery pipeline they should be there in the first place.</td></tr>
+      <tr><td class="tg-0lax">Most of the projects that I worked on got new bugs after refactorings. Maybe the concept of refactoring should be upgrade to something like: code smells + bug = refactoring.</td></tr>
+      <tr><td class="tg-0lax">How much harmful, much priced.</td></tr>
+      <tr><td class="tg-0lax">It's very expensive to fix a bug that is in production, devs should analyze their solution, many times before submit their code. Testing is a very important phase of the development and the scenarios need to be real ones and complex scenarios, covering edge cases and large data input.</td></tr>
+      <tr><td class="tg-0lax">Bad quality code is an effect of programmers with bad knowledge about programming. Not only programming languages, but also logic, abstractions and modeling.</td></tr>
+    </table>
 
-    <h3>Results RQ2 (Effectivity):</h3>
+
+    </br></br>
+    <h3>Results RQ3 (How  effective  are  Machine  Learning  techniques  to detect harmful code?):</h3>
     <style type="text/css">
       table.tableizer-table {
         font-size: 12px;
@@ -56,134 +202,1141 @@
       }
     </style>
     <table class="tableizer-table">
-    <thead><tr class="tableizer-firstrow"><th>Smell</th><th>Algorithm</th><th>Clean</th><th>Smells</th><th>Buggy</th><th>Harmful</th><th>Mean</th></tr></thead><tbody>
-     <tr><td>Long Parameter List</td><td>XGBClassifier</td><td>0,93</td><td>0,88</td><td>1,00</td><td>0,94</td><td>0,94</td></tr>
-     <tr><td>&nbsp;</td><td>SVC</td><td>0,60</td><td>0,70</td><td>0,65</td><td>0,42</td><td>0,59</td></tr>
-     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,25</td><td>0,77</td><td>0,67</td><td>0,71</td><td>0,60</td></tr>
-     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>0,78</td><td>0,67</td><td>0,81</td><td>0,53</td><td>0,70</td></tr>
-     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,50</td><td>0,83</td><td>0,67</td><td>0,60</td><td>0,65</td></tr>
-     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
-     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
-     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,91</td><td>0,75</td><td>1,00</td><td>0,73</td><td>0,85</td></tr>
-     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,92</td><td>0,92</td><td>1,00</td><td>1,00</td><td>0,96</td></tr>
-     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
-     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,86</td><td>0,62</td><td>0,87</td><td>0,87</td><td>0,80</td></tr>
-     <tr><td>Switch Statements</td><td>SGDClassifier</td><td>0,53</td><td>0,47</td><td>0,45</td><td>0,56</td><td>0,50</td></tr>
-     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>0,68</td><td>0,59</td><td>0,67</td><td>0,71</td><td>0,66</td></tr>
-     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,21</td><td>0,47</td><td>0,51</td><td>0,56</td><td>0,44</td></tr>
-     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>0,97</td><td>0,83</td><td>0,98</td><td>0,80</td><td>0,90</td></tr>
-     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,61</td><td>0,53</td><td>0,53</td><td>0,65</td><td>0,58</td></tr>
-     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,16</td><td>0,44</td><td>0,52</td><td>0,56</td><td>0,42</td></tr>
-     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,62</td><td>0,53</td><td>0,57</td><td>0,68</td><td>0,60</td></tr>
-     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>0,98</td><td>0,87</td><td>0,98</td><td>0,85</td><td>0,92</td></tr>
-     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,58</td><td>0,50</td><td>0,49</td><td>0,64</td><td>0,55</td></tr>
-     <tr><td>Deficient Encapsulation</td><td>XGBClassifier</td><td>0,81</td><td>0,88</td><td>0,85</td><td>0,82</td><td>0,84</td></tr>
-     <tr><td>&nbsp;</td><td>SVC</td><td>0,67</td><td>0,85</td><td>0,66</td><td>0,74</td><td>0,73</td></tr>
-     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,37</td><td>0,62</td><td>0,29</td><td>0,52</td><td>0,45</td></tr>
-     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>0,72</td><td>0,83</td><td>0,86</td><td>0,85</td><td>0,82</td></tr>
-     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,27</td><td>0,62</td><td>0,52</td><td>0,58</td><td>0,50</td></tr>
-     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>0,56</td><td>0,71</td><td>0,65</td><td>0,66</td><td>0,64</td></tr>
-     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,64</td><td>0,78</td><td>0,58</td><td>0,72</td><td>0,68</td></tr>
-     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,25</td><td>0,70</td><td>0,50</td><td>0,33</td><td>0,44</td></tr>
-     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,72</td><td>0,85</td><td>0,78</td><td>0,79</td><td>0,79</td></tr>
-     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>0,99</td><td>1,00</td><td>0,99</td><td>0,99</td></tr>
-     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,46</td><td>0,53</td><td>0,45</td><td>0,63</td><td>0,52</td></tr>
-     <tr><td>Insufficient Modularization</td><td>XGBClassifier</td><td>0,49</td><td>0,71</td><td>0,27</td><td>0,58</td><td>0,51</td></tr>
-     <tr><td>&nbsp;</td><td>SVC</td><td>0,51</td><td>0,76</td><td>0,38</td><td>0,59</td><td>0,56</td></tr>
-     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,41</td><td>0,67</td><td>0,37</td><td>0,25</td><td>0,42</td></tr>
-     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>0,49</td><td>0,74</td><td>0,31</td><td>0,57</td><td>0,53</td></tr>
-     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,39</td><td>0,71</td><td>0,43</td><td>0,58</td><td>0,53</td></tr>
-     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>0,99</td><td>0,98</td><td>0,99</td><td>0,97</td><td>0,98</td></tr>
-     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>1,00</td><td>0,97</td><td>1,00</td><td>0,97</td><td>0,98</td></tr>
-     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,37</td><td>0,73</td><td>0,34</td><td>0,53</td><td>0,49</td></tr>
-     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,51</td><td>0,74</td><td>0,36</td><td>0,57</td><td>0,54</td></tr>
-     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>0,97</td><td>1,00</td><td>0,97</td><td>0,99</td></tr>
-     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,42</td><td>0,97</td><td>0,42</td><td>0,54</td><td>0,59</td></tr>
-     <tr><td>Magic Number</td><td>XGBClassifier</td><td>0,96</td><td>0,99</td><td>0,97</td><td>0,98</td><td>0,98</td></tr>
-     <tr><td>&nbsp;</td><td>SVC</td><td>0,52</td><td>0,74</td><td>0,56</td><td>0,68</td><td>0,63</td></tr>
-     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,52</td><td>0,68</td><td>0,38</td><td>0,38</td><td>0,49</td></tr>
-     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>1,00</td><td>0,99</td><td>1,00</td><td>0,99</td><td>0,99</td></tr>
-     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,20</td><td>0,63</td><td>0,58</td><td>0,50</td><td>0,48</td></tr>
-     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>0,60</td><td>0,67</td><td>0,59</td><td>0,66</td><td>0,63</td></tr>
-     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,95</td><td>0,97</td><td>0,95</td><td>0,96</td><td>0,96</td></tr>
-     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,17</td><td>0,53</td><td>0,43</td><td>0,51</td><td>0,41</td></tr>
-     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,80</td><td>0,91</td><td>0,79</td><td>0,86</td><td>0,84</td></tr>
-     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>0,99</td><td>1,00</td><td>0,99</td><td>1,00</td></tr>
-     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,50</td><td>0,71</td><td>0,62</td><td>0,75</td><td>0,65</td></tr>
-     <tr><td>Unutilized Abstraction</td><td>XGBClassifier</td><td>0,69</td><td>0,85</td><td>0,74</td><td>0,69</td><td>0,74</td></tr>
-     <tr><td>&nbsp;</td><td>SVC</td><td>0,52</td><td>0,73</td><td>0,52</td><td>0,57</td><td>0,58</td></tr>
-     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,35</td><td>0,66</td><td>0,54</td><td>0,48</td><td>0,51</td></tr>
-     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>0,99</td><td>0,98</td><td>0,99</td><td>0,98</td><td>0,99</td></tr>
-     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,20</td><td>0,63</td><td>0,58</td><td>0,50</td><td>0,48</td></tr>
-     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>0,99</td><td>0,98</td><td>0,99</td><td>0,98</td><td>0,98</td></tr>
-     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,61</td><td>0,81</td><td>0,69</td><td>0,67</td><td>0,70</td></tr>
-     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,17</td><td>0,53</td><td>0,43</td><td>0,51</td><td>0,41</td></tr>
-     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,83</td><td>0,91</td><td>0,88</td><td>0,86</td><td>0,87</td></tr>
-     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>0,99</td><td>0,99</td><td>1,00</td><td>0,99</td><td>0,99</td></tr>
-     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,02</td><td>0,67</td><td>0,55</td><td>0,46</td><td>0,42</td></tr>
-     <tr><td>Broken Hierarchy</td><td>XGBClassifier</td><td>0,97</td><td>0,97</td><td>0,98</td><td>0,97</td><td>0,97</td></tr>
-     <tr><td>&nbsp;</td><td>SVC</td><td>0,51</td><td>0,76</td><td>0,49</td><td>0,58</td><td>0,58</td></tr>
-     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>0,99</td><td>1,00</td></tr>
-     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,27</td><td>0,66</td><td>0,42</td><td>0,57</td><td>0,48</td></tr>
-     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>0,99</td><td>1,00</td></tr>
-     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,69</td><td>0,85</td><td>0,80</td><td>0,78</td><td>0,78</td></tr>
-     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,26</td><td>0,65</td><td>0,31</td><td>0,52</td><td>0,43</td></tr>
-     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>1,00</td><td>0,99</td><td>1,00</td><td>0,99</td><td>0,99</td></tr>
-     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>0,99</td><td>1,00</td><td>0,99</td><td>0,99</td></tr>
-     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,60</td><td>0,77</td><td>0,66</td><td>0,70</td><td>0,68</td></tr>
-     <tr><td>Complex Method</td><td>XGBClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
-     <tr><td>&nbsp;</td><td>SVC</td><td>0,71</td><td>0,82</td><td>0,64</td><td>0,67</td><td>0,71</td></tr>
-     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,70</td><td>0,88</td><td>0,82</td><td>0,73</td><td>0,78</td></tr>
-     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
-     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,33</td><td>0,73</td><td>0,65</td><td>0,53</td><td>0,56</td></tr>
-     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,87</td><td>0,82</td><td>0,85</td><td>0,67</td><td>0,80</td></tr>
-     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,33</td><td>0,71</td><td>0,65</td><td>0,60</td><td>0,57</td></tr>
-     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,75</td><td>0,78</td><td>0,83</td><td>0,70</td><td>0,77</td></tr>
-     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
-     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,65</td><td>0,85</td><td>0,75</td><td>0,55</td><td>0,70</td></tr>
-     <tr><td>Cyclic-Dependent Modularization</td><td>XGBClassifier</td><td>0,96</td><td>0,99</td><td>1,00</td><td>1,00</td><td>0,99</td></tr>
-     <tr><td>&nbsp;</td><td>SVC</td><td>0,77</td><td>0,86</td><td>0,67</td><td>0,57</td><td>0,72</td></tr>
-     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,50</td><td>0,53</td><td>0,53</td><td>0,50</td><td>0,51</td></tr>
-     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>0,75</td><td>0,82</td><td>0,83</td><td>0,82</td><td>0,81</td></tr>
-     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,29</td><td>0,77</td><td>0,52</td><td>0,48</td><td>0,52</td></tr>
-     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
-     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,96</td><td>0,99</td><td>0,94</td><td>1,00</td><td>0,97</td></tr>
-     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,44</td><td>0,74</td><td>0,35</td><td>0,57</td><td>0,53</td></tr>
-     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,58</td><td>0,83</td><td>0,83</td><td>1,00</td><td>0,81</td></tr>
-     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
-     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,54</td><td>0,81</td><td>0,82</td><td>0,78</td><td>0,74</td></tr>
-     <tr><td>Empty catch clause</td><td>XGBClassifier</td><td>0,81</td><td>0,77</td><td>0,75</td><td>0,79</td><td>0,78</td></tr>
-     <tr><td>&nbsp;</td><td>SVC</td><td>0,68</td><td>0,77</td><td>0,63</td><td>0,71</td><td>0,70</td></tr>
-     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,71</td><td>0,90</td><td>0,39</td><td>0,48</td><td>0,62</td></tr>
-     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>0,75</td><td>0,86</td><td>0,78</td><td>0,81</td><td>0,80</td></tr>
-     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,43</td><td>0,56</td><td>0,15</td><td>0,51</td><td>0,41</td></tr>
-     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>0,99</td><td>0,99</td><td>0,98</td><td>0,98</td><td>0,99</td></tr>
-     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,96</td><td>0,97</td><td>0,96</td><td>0,94</td><td>0,96</td></tr>
-     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,23</td><td>0,52</td><td>0,17</td><td>0,46</td><td>0,34</td></tr>
-     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>0,79</td><td>0,88</td><td>0,78</td><td>0,80</td><td>0,81</td></tr>
-     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>0,98</td><td>0,98</td><td>0,98</td><td>0,98</td><td>0,98</td></tr>
-     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,73</td><td>0,65</td><td>0,70</td><td>0,59</td><td>0,67</td></tr>
-     <tr><td>Long Identifier</td><td>XGBClassifier</td><td>0,81</td><td>0,77</td><td>0,75</td><td>0,79</td><td>0,78</td></tr>
-     <tr><td>&nbsp;</td><td>SVC</td><td>0,96</td><td>0,96</td><td>0,92</td><td>0,92</td><td>0,94</td></tr>
-     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,60</td><td>0,46</td><td>0,37</td><td>0,46</td><td>0,47</td></tr>
-     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>1,00</td><td>0,96</td><td>1,00</td><td>1,00</td><td>0,99</td></tr>
-     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,34</td><td>0,26</td><td>0,43</td><td>0,47</td><td>0,38</td></tr>
-     <tr><td>&nbsp;</td><td>KNeighborsClassifier</td><td>1,00</td><td>0,99</td><td>1,00</td><td>0,98</td><td>0,99</td></tr>
-     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,88</td><td>0,84</td><td>0,81</td><td>0,88</td><td>0,85</td></tr>
-     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,42</td><td>0,48</td><td>0,53</td><td>0,32</td><td>0,44</td></tr>
-     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>1,00</td><td>0,98</td><td>1,00</td><td>0,98</td><td>0,99</td></tr>
-     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>0,98</td><td>2,00</td><td>0,98</td><td>1,24</td></tr>
-     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,79</td><td>0,67</td><td>0,63</td><td>0,69</td><td>0,69</td></tr>
-     <tr><td>Simplified Ternary</td><td>XGBClassifier</td><td>0,86</td><td>0,98</td><td>0,90</td><td>0,88</td><td>0,90</td></tr>
-     <tr><td>&nbsp;</td><td>SGDClassifier</td><td>0,83</td><td>0,92</td><td>0,74</td><td>0,83</td><td>0,83</td></tr>
-     <tr><td>&nbsp;</td><td>RandomForestClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
-     <tr><td>&nbsp;</td><td>MultinomialNB</td><td>0,25</td><td>0,75</td><td>0,67</td><td>0,71</td><td>0,60</td></tr>
-     <tr><td>&nbsp;</td><td>GradientBoostingClassifier</td><td>0,83</td><td>0,92</td><td>0,74</td><td>0,83</td><td>0,83</td></tr>
-     <tr><td>&nbsp;</td><td>GaussianNB</td><td>0,62</td><td>0,83</td><td>0,74</td><td>0,67</td><td>0,71</td></tr>
-     <tr><td>&nbsp;</td><td>ExtraTreesClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
-     <tr><td>&nbsp;</td><td>DecisionTreeClassifier</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr>
-     <tr><td>&nbsp;</td><td>AdaBoostClassifier</td><td>0,50</td><td>0,88</td><td>0,93</td><td>0,74</td><td>0,76</td></tr>
+    <thead><tr class="tableizer-firstrow"><th>Smell</th><th>Algorithm</th><th>Smells</th><th>Harmful</th><th>Mean</th></tr></thead><tbody>
+      <tr>
+        <td class="tg-0lax">Long Statement</td>
+        <td class="tg-0lax">KNeighborsClassifier</td>
+        <td class="tg-0lax">0,80</td>
+        <td class="tg-0lax">0,92</td>
+        <td class="tg-0lax">0,86</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">RandomForestClassifier</td>
+        <td class="tg-0lax">0,73</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,87</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">DecisionTreeClassifier</td>
+        <td class="tg-0lax">0,60</td>
+        <td class="tg-0lax">0,96</td>
+        <td class="tg-0lax">0,78</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">AdaBoostClassifier</td>
+        <td class="tg-0lax">0,30</td>
+        <td class="tg-0lax">0,73</td>
+        <td class="tg-0lax">0,52</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GradientBoostingClassifier</td>
+        <td class="tg-0lax">0,85</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,93</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0,59</td>
+        <td class="tg-0lax">0,67</td>
+        <td class="tg-0lax">0,63</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Deficient Encapsulation</td>
+        <td class="tg-0lax">KNeighborsClassifier</td>
+        <td class="tg-0lax">0,59</td>
+        <td class="tg-0lax">0,87</td>
+        <td class="tg-0lax">0,73</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">RandomForestClassifier</td>
+        <td class="tg-0lax">0,68</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,84</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">DecisionTreeClassifier</td>
+        <td class="tg-0lax">0,63</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,82</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">AdaBoostClassifier</td>
+        <td class="tg-0lax">0,57</td>
+        <td class="tg-0lax">0,73</td>
+        <td class="tg-0lax">0,65</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GradientBoostingClassifier</td>
+        <td class="tg-0lax">0,62</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,81</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0,52</td>
+        <td class="tg-0lax">0,54</td>
+        <td class="tg-0lax">0,53</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">SVM</td>
+        <td class="tg-0lax">0,63</td>
+        <td class="tg-0lax">0,91</td>
+        <td class="tg-0lax">0,77</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Cyclic-Dependent Modularization</td>
+        <td class="tg-0lax">KNeighborsClassifier</td>
+        <td class="tg-0lax">0,55</td>
+        <td class="tg-0lax">0,79</td>
+        <td class="tg-0lax">0,67</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">RandomForestClassifier</td>
+        <td class="tg-0lax">0,62</td>
+        <td class="tg-0lax">0,88</td>
+        <td class="tg-0lax">0,75</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">DecisionTreeClassifier</td>
+        <td class="tg-0lax">0,40</td>
+        <td class="tg-0lax">0,90</td>
+        <td class="tg-0lax">0,65</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">AdaBoostClassifier</td>
+        <td class="tg-0lax">0,67</td>
+        <td class="tg-0lax">0,76</td>
+        <td class="tg-0lax">0,72</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GradientBoostingClassifier</td>
+        <td class="tg-0lax">0,56</td>
+        <td class="tg-0lax">0,90</td>
+        <td class="tg-0lax">0,73</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0,42</td>
+        <td class="tg-0lax">0,54</td>
+        <td class="tg-0lax">0,48</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">SVM</td>
+        <td class="tg-0lax">0,46</td>
+        <td class="tg-0lax">0,80</td>
+        <td class="tg-0lax">0,63</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Broken Hierarchy</td>
+        <td class="tg-0lax">KNeighborsClassifier</td>
+        <td class="tg-0lax">0,00</td>
+        <td class="tg-0lax">0.5</td>
+        <td class="tg-0lax">0,50</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">RandomForestClassifier</td>
+        <td class="tg-0lax">0,00</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,50</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">DecisionTreeClassifier</td>
+        <td class="tg-0lax">0,00</td>
+        <td class="tg-0lax">0,50</td>
+        <td class="tg-0lax">0,25</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">AdaBoostClassifier</td>
+        <td class="tg-0lax">0,00</td>
+        <td class="tg-0lax">0,50</td>
+        <td class="tg-0lax">0,25</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GradientBoostingClassifier</td>
+        <td class="tg-0lax">0,00</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,50</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0,00</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,50</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">SVM</td>
+        <td class="tg-0lax">0,00</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,50</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Long Parameter List</td>
+        <td class="tg-0lax">KNeighborsClassifier</td>
+        <td class="tg-0lax">0,80</td>
+        <td class="tg-0lax">0,93</td>
+        <td class="tg-0lax">0,87</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">RandomForestClassifier</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">1,00</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">DecisionTreeClassifier</td>
+        <td class="tg-0lax">0,82</td>
+        <td class="tg-0lax">0,92</td>
+        <td class="tg-0lax">0,87</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">AdaBoostClassifier</td>
+        <td class="tg-0lax">0,92</td>
+        <td class="tg-0lax">0,93</td>
+        <td class="tg-0lax">0,93</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GradientBoostingClassifier</td>
+        <td class="tg-0lax">0,92</td>
+        <td class="tg-0lax">0,93</td>
+        <td class="tg-0lax">0,93</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0,86</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,93</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">SVM</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">1,00</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Magic Number</td>
+        <td class="tg-0lax">KNeighborsClassifier</td>
+        <td class="tg-0lax">0,44</td>
+        <td class="tg-0lax">0,84</td>
+        <td class="tg-0lax">0,64</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">RandomForestClassifier</td>
+        <td class="tg-0lax">0,80</td>
+        <td class="tg-0lax">0,96</td>
+        <td class="tg-0lax">0,88</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">DecisionTreeClassifier</td>
+        <td class="tg-0lax">0,97</td>
+        <td class="tg-0lax">0,96</td>
+        <td class="tg-0lax">0,97</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">AdaBoostClassifier</td>
+        <td class="tg-0lax">0,57</td>
+        <td class="tg-0lax">0,69</td>
+        <td class="tg-0lax">0,63</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GradientBoostingClassifier</td>
+        <td class="tg-0lax">0,90</td>
+        <td class="tg-0lax">0,96</td>
+        <td class="tg-0lax">0,93</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0,11</td>
+        <td class="tg-0lax">0,58</td>
+        <td class="tg-0lax">0,35</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">SVM</td>
+        <td class="tg-0lax">0,45</td>
+        <td class="tg-0lax">0,79</td>
+        <td class="tg-0lax">0,62</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Insufficient Modularization</td>
+        <td class="tg-0lax">KNeighborsClassifier</td>
+        <td class="tg-0lax">0,55</td>
+        <td class="tg-0lax">0,80</td>
+        <td class="tg-0lax">0,68</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">RandomForestClassifier</td>
+        <td class="tg-0lax">0,52</td>
+        <td class="tg-0lax">0,90</td>
+        <td class="tg-0lax">0,71</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">DecisionTreeClassifier</td>
+        <td class="tg-0lax">0,59</td>
+        <td class="tg-0lax">0,93</td>
+        <td class="tg-0lax">0,76</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">AdaBoostClassifier</td>
+        <td class="tg-0lax">0,48</td>
+        <td class="tg-0lax">0,80</td>
+        <td class="tg-0lax">0,64</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GradientBoostingClassifier</td>
+        <td class="tg-0lax">0,62</td>
+        <td class="tg-0lax">0,93</td>
+        <td class="tg-0lax">0,78</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0,73</td>
+        <td class="tg-0lax">0,61</td>
+        <td class="tg-0lax">0,67</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">SVM</td>
+        <td class="tg-0lax">0,67</td>
+        <td class="tg-0lax">0,97</td>
+        <td class="tg-0lax">0,82</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Complex Method</td>
+        <td class="tg-0lax">KNeighborsClassifier</td>
+        <td class="tg-0lax">0,50</td>
+        <td class="tg-0lax">0,75</td>
+        <td class="tg-0lax">0,63</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">RandomForestClassifier</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,86</td>
+        <td class="tg-0lax">0,93</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">DecisionTreeClassifier</td>
+        <td class="tg-0lax">0,50</td>
+        <td class="tg-0lax">0,75</td>
+        <td class="tg-0lax">0,63</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">AdaBoostClassifier</td>
+        <td class="tg-0lax">0,80</td>
+        <td class="tg-0lax">0,86</td>
+        <td class="tg-0lax">0,83</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GradientBoostingClassifier</td>
+        <td class="tg-0lax">0,86</td>
+        <td class="tg-0lax">0,86</td>
+        <td class="tg-0lax">0,86</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0,80</td>
+        <td class="tg-0lax">0,86</td>
+        <td class="tg-0lax">0,83</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">SVM</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,86</td>
+        <td class="tg-0lax">0,93</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Unutilized Abstraction</td>
+        <td class="tg-0lax">KNeighborsClassifier</td>
+        <td class="tg-0lax">0,61</td>
+        <td class="tg-0lax">0,50</td>
+        <td class="tg-0lax">0,56</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">RandomForestClassifier</td>
+        <td class="tg-0lax">0,73</td>
+        <td class="tg-0lax">0,94</td>
+        <td class="tg-0lax">0,84</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">DecisionTreeClassifier</td>
+        <td class="tg-0lax">0,63</td>
+        <td class="tg-0lax">0,96</td>
+        <td class="tg-0lax">0,80</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">AdaBoostClassifier</td>
+        <td class="tg-0lax">0,72</td>
+        <td class="tg-0lax">0,86</td>
+        <td class="tg-0lax">0,79</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GradientBoostingClassifier</td>
+        <td class="tg-0lax">0,62</td>
+        <td class="tg-0lax">0,94</td>
+        <td class="tg-0lax">0,78</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0,65</td>
+        <td class="tg-0lax">0,64</td>
+        <td class="tg-0lax">0,65</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">SVM</td>
+        <td class="tg-0lax">0,58</td>
+        <td class="tg-0lax">0,64</td>
+        <td class="tg-0lax">0,61</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Long Identifier</td>
+        <td class="tg-0lax">KNeighborsClassifier</td>
+        <td class="tg-0lax">0,40</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,70</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">RandomForestClassifier</td>
+        <td class="tg-0lax">0,89</td>
+        <td class="tg-0lax">0,89</td>
+        <td class="tg-0lax">0,89</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">DecisionTreeClassifier</td>
+        <td class="tg-0lax">0,29</td>
+        <td class="tg-0lax">0,83</td>
+        <td class="tg-0lax">0,56</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">AdaBoostClassifier</td>
+        <td class="tg-0lax">0,75</td>
+        <td class="tg-0lax">0,89</td>
+        <td class="tg-0lax">0,82</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GradientBoostingClassifier</td>
+        <td class="tg-0lax">0,75</td>
+        <td class="tg-0lax">0,89</td>
+        <td class="tg-0lax">0,82</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0,67</td>
+        <td class="tg-0lax">0,50</td>
+        <td class="tg-0lax">0,59</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">SVM</td>
+        <td class="tg-0lax">0,57</td>
+        <td class="tg-0lax">0,89</td>
+        <td class="tg-0lax"></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Empty catch clause</td>
+        <td class="tg-0lax">KNeighborsClassifier</td>
+        <td class="tg-0lax">0,66</td>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">0,66</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">RandomForestClassifier</td>
+        <td class="tg-0lax">0,00</td>
+        <td class="tg-0lax">0,86</td>
+        <td class="tg-0lax">0,43</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">DecisionTreeClassifier</td>
+        <td class="tg-0lax">0,50</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,75</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">AdaBoostClassifier</td>
+        <td class="tg-0lax">0,00</td>
+        <td class="tg-0lax">0,75</td>
+        <td class="tg-0lax">0,38</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GradientBoostingClassifier</td>
+        <td class="tg-0lax">0,50</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,75</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0,00</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,50</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">SVM</td>
+        <td class="tg-0lax">0,50</td>
+        <td class="tg-0lax">0,86</td>
+        <td class="tg-0lax"></td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Switch Statements</td>
+        <td class="tg-0lax">KNeighborsClassifier</td>
+        <td class="tg-0lax">0,50</td>
+        <td class="tg-0lax">0,89</td>
+        <td class="tg-0lax">0,70</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">RandomForestClassifier</td>
+        <td class="tg-0lax">0,67</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,84</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">DecisionTreeClassifier</td>
+        <td class="tg-0lax">0,44</td>
+        <td class="tg-0lax">0,75</td>
+        <td class="tg-0lax">0,60</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">AdaBoostClassifier</td>
+        <td class="tg-0lax">0,67</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,84</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GradientBoostingClassifier</td>
+        <td class="tg-0lax">0,75</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0,88</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0,29</td>
+        <td class="tg-0lax">0,89</td>
+        <td class="tg-0lax">0,59</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax"></td>
+        <td class="tg-0lax">SVM</td>
+        <td class="tg-0lax">0,86</td>
+        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">1,00</td>
+      </tr>
     </tbody></table>
+    </br>
+    </br>
+    
+    <h3>Results RQ4 (Which metrics are most influential on detecting harmful code?):</h3>
+    <table class="tableizer-table">
+      <tr>
+        <th class="tg-0lax">Smell</th>
+        <th class="tg-0lax">win feature</th>
+        <th class="tg-0lax">abstract_methods</th>
+        <th class="tg-0lax">annonymous_classes_qty</th>
+        <th class="tg-0lax">assignments_qty</th>
+        <th class="tg-0lax">cbo</th>
+        <th class="tg-0lax">dit</th>
+        <th class="tg-0lax">final_fields</th>
+        <th class="tg-0lax">final_methods</th>
+        <th class="tg-0lax">lambdas_qty</th>
+        <th class="tg-0lax">lcom</th>
+        <th class="tg-0lax">line</th>
+        <th class="tg-0lax">loc</th>
+        <th class="tg-0lax">math_operations_qty</th>
+        <th class="tg-0lax">max_nested_blocks</th>
+        <th class="tg-0lax">median_files</th>
+        <th class="tg-0lax">number_commits</th>
+        <th class="tg-0lax">number_days</th>
+        <th class="tg-0lax">number_tests</th>
+        <th class="tg-0lax">numbers_qty</th>
+        <th class="tg-0lax">parameters</th>
+        <th class="tg-0lax">parenthesized_exps_qty</th>
+        <th class="tg-0lax">private_fields</th>
+        <th class="tg-0lax">private_methods</th>
+        <th class="tg-0lax">protected_fields</th>
+        <th class="tg-0lax">protected_methods</th>
+        <th class="tg-0lax">public_fields</th>
+        <th class="tg-0lax">public_methods</th>
+        <th class="tg-0lax">returns</th>
+        <th class="tg-0lax">rfc</th>
+        <th class="tg-0lax">static_fields</th>
+        <th class="tg-0lax">static_methods</th>
+        <th class="tg-0lax">string_literals_qty</th>
+        <th class="tg-0lax">sub_classes_qty</th>
+        <th class="tg-0lax">synchronized_methods</th>
+        <th class="tg-0lax">total_fields</th>
+        <th class="tg-0lax">total_methods</th>
+        <th class="tg-0lax">unique_words_qty</th>
+        <th class="tg-0lax">variables</th>
+        <th class="tg-0lax">wmc</th>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Long Parameter List</td>
+        <td class="tg-0lax">assignments_qty</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,002596102719</td>
+        <td class="tg-0lax">0,0001</td>
+        <td class="tg-0lax">0,0074</td>
+        <td class="tg-0lax">0,0016</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0012</td>
+        <td class="tg-0lax">0,0019</td>
+        <td class="tg-0lax">0,0002</td>
+        <td class="tg-0lax">0,0388</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0002</td>
+        <td class="tg-0lax">0,0016</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,2434</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,002482708304</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,003580103001</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Magic Number</td>
+        <td class="tg-0lax">cbo</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,01784546452</td>
+        <td class="tg-0lax">0,0324</td>
+        <td class="tg-0lax">0,0697</td>
+        <td class="tg-0lax">0,0012</td>
+        <td class="tg-0lax">0,0005</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0025</td>
+        <td class="tg-0lax">0,0020</td>
+        <td class="tg-0lax">0,0563</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0071</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0022</td>
+        <td class="tg-0lax">0,0080</td>
+        <td class="tg-0lax">0,0019</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0063</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0025</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0010</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,001766398259</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,06504195516</td>
+        <td class="tg-0lax">0,02148389981</td>
+        <td class="tg-0lax">0,0007871544453</td>
+        <td class="tg-0lax">0,001685419529</td>
+        <td class="tg-0lax">0,009912303158</td>
+        <td class="tg-0lax">0,00126145993</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,001442509295</td>
+        <td class="tg-0lax">0,03422648011</td>
+        <td class="tg-0lax">0,01131778222</td>
+        <td class="tg-0lax">0,00473745198</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Switch Statements</td>
+        <td class="tg-0lax">cbo</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,02926738641</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,1504</td>
+        <td class="tg-0lax">0,0059</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0064</td>
+        <td class="tg-0lax">0,0144</td>
+        <td class="tg-0lax">0,0578</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0074</td>
+        <td class="tg-0lax">0,0058</td>
+        <td class="tg-0lax">0,0103</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0108</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0072</td>
+        <td class="tg-0lax">0,0046</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,003803663876</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,004098251699</td>
+        <td class="tg-0lax">0,003387790998</td>
+        <td class="tg-0lax">0,009155312078</td>
+        <td class="tg-0lax">0,005692201305</td>
+        <td class="tg-0lax">0,007576066598</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,01570598895</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,00847736986</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Empty catch clause</td>
+        <td class="tg-0lax">cbo</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,007943129978</td>
+        <td class="tg-0lax">0,0209</td>
+        <td class="tg-0lax">0,1036</td>
+        <td class="tg-0lax">0,0022</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0035</td>
+        <td class="tg-0lax">0,0390</td>
+        <td class="tg-0lax">0,0097</td>
+        <td class="tg-0lax">0,0033</td>
+        <td class="tg-0lax">0,0592</td>
+        <td class="tg-0lax">0,0091</td>
+        <td class="tg-0lax">0,0039</td>
+        <td class="tg-0lax">0,0015</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0105</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0020</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,02820788915</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,01330766527</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,003820932846</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,04034103318</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Unutilized Abstraction</td>
+        <td class="tg-0lax">line</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,0006338525151</td>
+        <td class="tg-0lax">0,0070</td>
+        <td class="tg-0lax">0,0471</td>
+        <td class="tg-0lax">0,0104</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0010</td>
+        <td class="tg-0lax">0,0003</td>
+        <td class="tg-0lax">0,1187</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0005</td>
+        <td class="tg-0lax">0,0039</td>
+        <td class="tg-0lax">0,0018</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0042</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0003</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0003</td>
+        <td class="tg-0lax">0,001882948191</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,01740217916</td>
+        <td class="tg-0lax">0,04690772999</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,002224002284</td>
+        <td class="tg-0lax">0,02460431333</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,001597895365</td>
+        <td class="tg-0lax">0,009488010525</td>
+        <td class="tg-0lax">0,04455879393</td>
+        <td class="tg-0lax">0,01393914268</td>
+        <td class="tg-0lax">0,01028239255</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Long Statement</td>
+        <td class="tg-0lax">loc</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,01706197106</td>
+        <td class="tg-0lax">0,0252</td>
+        <td class="tg-0lax">0,0194</td>
+        <td class="tg-0lax">0,0054</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0074</td>
+        <td class="tg-0lax">0,0070</td>
+        <td class="tg-0lax">0,0354</td>
+        <td class="tg-0lax">0,0483</td>
+        <td class="tg-0lax">0,0347</td>
+        <td class="tg-0lax">0,0137</td>
+        <td class="tg-0lax">0,0066</td>
+        <td class="tg-0lax">0,0049</td>
+        <td class="tg-0lax">0,0054</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0232</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0047</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0033</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,02644161278</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,01469335932</td>
+        <td class="tg-0lax">0,003489426355</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,006388917129</td>
+        <td class="tg-0lax">0,009582210785</td>
+        <td class="tg-0lax">0,02457753413</td>
+        <td class="tg-0lax">0,009165393531</td>
+        <td class="tg-0lax">0,01212702814</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Broken Hierarchy</td>
+        <td class="tg-0lax">number_tests</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,007533836682</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0336</td>
+        <td class="tg-0lax">0,0070</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0130</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0605</td>
+        <td class="tg-0lax">0,0063</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0246</td>
+        <td class="tg-0lax">0,0502</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,1051</td>
+        <td class="tg-0lax">0,0068</td>
+        <td class="tg-0lax">0,0158</td>
+        <td class="tg-0lax">0,0104</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,01758387566</td>
+        <td class="tg-0lax">0,02255164962</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,02761263202</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,007126752202</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Long Identifier</td>
+        <td class="tg-0lax">returns</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0083</td>
+        <td class="tg-0lax">0,0051</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0052</td>
+        <td class="tg-0lax">0,0110</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0445</td>
+        <td class="tg-0lax">0,0107</td>
+        <td class="tg-0lax">0,0137</td>
+        <td class="tg-0lax">0,0319</td>
+        <td class="tg-0lax">0,0253</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0313</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0080</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0131</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,1252356057</td>
+        <td class="tg-0lax">0,01645671064</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,003099838913</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,01452786156</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,03880139553</td>
+        <td class="tg-0lax">0,009158669931</td>
+        <td class="tg-0lax">0,01546093687</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Insufficient Modularization</td>
+        <td class="tg-0lax">unique_words_qty</td>
+        <td class="tg-0lax">0,0002946555658</td>
+        <td class="tg-0lax">0,002966012324</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0434</td>
+        <td class="tg-0lax">0,0040</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0011</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0010</td>
+        <td class="tg-0lax">0,0583</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0021</td>
+        <td class="tg-0lax">0,0079</td>
+        <td class="tg-0lax">0,0033</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0091</td>
+        <td class="tg-0lax">0,0050</td>
+        <td class="tg-0lax">0,0003</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0004</td>
+        <td class="tg-0lax">0,0016</td>
+        <td class="tg-0lax">0,0029</td>
+        <td class="tg-0lax">0,0004990653883</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,03103296028</td>
+        <td class="tg-0lax">0,05589334215</td>
+        <td class="tg-0lax">0,0001062822715</td>
+        <td class="tg-0lax">0,0001238038913</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,0007621139172</td>
+        <td class="tg-0lax">0,001820251978</td>
+        <td class="tg-0lax">0,008716929737</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,063085921</td>
+        <td class="tg-0lax">0,06055625677</td>
+        <td class="tg-0lax">0,02081575887</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Cyclic-Dependent Modularization</td>
+        <td class="tg-0lax">unique_words_qty</td>
+        <td class="tg-0lax">0,003764458789</td>
+        <td class="tg-0lax">0,004656835115</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0386</td>
+        <td class="tg-0lax">0,0047</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0014</td>
+        <td class="tg-0lax">0,0027</td>
+        <td class="tg-0lax">0,0038</td>
+        <td class="tg-0lax">0,0248</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0032</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0027</td>
+        <td class="tg-0lax">0,0079</td>
+        <td class="tg-0lax">0,0128</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0026</td>
+        <td class="tg-0lax">0,0085</td>
+        <td class="tg-0lax">0,0029</td>
+        <td class="tg-0lax">0,0038</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,003109442314</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,06228861648</td>
+        <td class="tg-0lax">0,0193287433</td>
+        <td class="tg-0lax">0,002142238269</td>
+        <td class="tg-0lax">0,001737007583</td>
+        <td class="tg-0lax">0,009167691401</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,004780560399</td>
+        <td class="tg-0lax">0,002305802136</td>
+        <td class="tg-0lax">0,007069147699</td>
+        <td class="tg-0lax">0,07921127346</td>
+        <td class="tg-0lax">0,0356514147</td>
+        <td class="tg-0lax">0,04483235382</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Complex Method</td>
+        <td class="tg-0lax">unique_words_qty</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,008799575127</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0009</td>
+        <td class="tg-0lax">0,0002</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0095</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0005</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0007</td>
+        <td class="tg-0lax">0,0005</td>
+        <td class="tg-0lax">0,0003</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0005</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0008</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">9,97E-05</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,00643037336</td>
+        <td class="tg-0lax">0,003420842095</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,0008548492337</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,02806482355</td>
+        <td class="tg-0lax">0,008669426094</td>
+        <td class="tg-0lax">0,005846420364</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">Deficient Encapsulation</td>
+        <td class="tg-0lax">wmc</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,005272540351</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0534</td>
+        <td class="tg-0lax">0,0040</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0016</td>
+        <td class="tg-0lax">0,0028</td>
+        <td class="tg-0lax">0,0516</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0037</td>
+        <td class="tg-0lax">0,0031</td>
+        <td class="tg-0lax">0,0027</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0000</td>
+        <td class="tg-0lax">0,0175</td>
+        <td class="tg-0lax">0,0064</td>
+        <td class="tg-0lax">0,0032</td>
+        <td class="tg-0lax">0,0035</td>
+        <td class="tg-0lax">0,0037</td>
+        <td class="tg-0lax">0,0030</td>
+        <td class="tg-0lax">0,008202344957</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,03600258846</td>
+        <td class="tg-0lax">0,04042475189</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,00213791514</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,0033954416</td>
+        <td class="tg-0lax">0,00220217052</td>
+        <td class="tg-0lax">0,005265277733</td>
+        <td class="tg-0lax">0</td>
+        <td class="tg-0lax">0,02734842837</td>
+        <td class="tg-0lax">0,01133853864</td>
+        <td class="tg-0lax">0,07563527464</td>
+      </tr>
+    </table>
 
     </br>
     </br>
@@ -271,8 +1424,21 @@
     <p>PyDriller: <a href="https://github.com/ishepard/pydriller">https://github.com/ishepard/pydriller</a></p>
     <p>GitHub API: <a href="https://developer.github.com/v3/">https://developer.github.com/v3/</a></p>
 
-    <br/>
-    <br/>
+    <h3>Study Design:</h3>
+    </br>
+    <img src="img/study_design.png"/>
+    </br></br></br>
+
+    <h3>Harmful Code Representation:</h3>
+    </br>
+    <img src="img/harmful_code_query.png"/>
+    </br></br></br>
+
+    <h3>Study Design Effectiveness:</h3>
+    </br>
+    <img src="img/study_design_effectiveness.png"/>
+    </br></br></br>
+
     <h3>Files:</h3>
     <p>The hyperparams and results for rq2 is available here: <a href="https://drive.google.com/open?id=1eitT9BpOcV8daqbm9EYmwcARKNdcRlQG">https://drive.google.com/open?id=1eitT9BpOcV8daqbm9EYmwcARKNdcRlQG</a></p>
     <p>The dataset is available here: <a href="https://drive.google.com/open?id=1ISYmXE5U9PPNb2eRKo4g6--7AraQrBtJ">https://drive.google.com/open?id=1ISYmXE5U9PPNb2eRKo4g6--7AraQrBtJ</a></p>
