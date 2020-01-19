@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Are Code Smells Always Harmful? Understanding and Classifying Code Harmfulness</title>
+  <title>Understanding and Classifying Code Harmfulness</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,12 +28,12 @@
   <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Are Code Smells Always Harmful? Understanding and Classifying Code Harmfulness</a>
+      <a class="navbar-brand" href="#">Understanding and Classifying Code Harmfulness</a>
     </div>
   </nav>
   <div class="container">
     <br/>
-    <h2>Welcome, this page is auxiliary for the paper: Are Code Smells Always Harmful? Understanding and Classifying Code Harmfulness, here we display the results as well provide the datasets used.</h2>
+    <h2>Welcome, this page is auxiliary for the paper: Understanding and Classifying Code Harmfulness, here we display the results as well provide the datasets used.</h2>
     <br/>
     <br/>
     <h3>Results RQ2 Survey Results:</h3>
@@ -74,7 +74,7 @@
       <tr><td class="tg-0lax">A piece of bad code tend to degrade fast after a lot of time without proper refactoring/maintenance, leading to a costly code evolution in the future.</td></tr>
       <tr><td class="tg-0lax">I don't think that there are a mandatory relation between code smells and the harmfulness. But, naturally, in some cases code smells could contains characteristics of harmful code.</td></tr>
       <tr><td class="tg-0lax">Some code can be ugly, but it works.</td></tr>
-      <tr><td class="tg-0lax">Nem todos core smells são tão nocivos.</td></tr>
+      <tr><td class="tg-0lax">Not all codes smell are so harmful.</td></tr>
       <tr><td class="tg-0lax">It is difficult to introduce changes in the business logic.</td></tr>
       <tr><td class="tg-0lax">The presence of code smell could increase code maintenance work.</td></tr>
       <tr><td class="tg-0lax">Code smell instances eventually hinder some major development tasks, especially when it comes to maintaining and evolving systems. I've had a hard time to read and change some large classes, complex methods, and intrincate hierarchies as well.</td></tr>
@@ -147,9 +147,9 @@
       <tr><td class="tg-0lax">In general, I tend to fix the bug (first) as fast as possible, which means I do not think about quality code at first.</td></tr>
       <tr><td class="tg-0lax">Economics. Buggy code have hard effects on end user which tend to abandon your product after working for some time with a bug.</td></tr>
       <tr><td class="tg-0lax">When refactoring, it is ideal to deal with all modules of the code, but due to some limitations, such as time, it is most important to look at fragile parts as harmful code.</td></tr>
-      <tr><td class="tg-0lax">Segundo critério será harmful.</td></tr>
+      <tr><td class="tg-0lax">Second criterion will be harmful.</td></tr>
       <tr><td class="tg-0lax">There is no priority.</td></tr>
-      <tr><td class="tg-0lax">Código bem escrito evita Code smells.</td></tr>
+      <tr><td class="tg-0lax">Well-written code avoids Code smells.</td></tr>
       <tr><td class="tg-0lax">My academic background made me see refactorings as means to "clean the house" in terms of bad code structures rather than means to actually fix bugs. Eventually, refactorings can help fix a bug. Nevertheless, as a practitioner, I've tried the most to avoid refactoring buggy code elements. These elements should be changed only if necessary; otherwise, the damage can get worse (other bugs may emerge).</td></tr>
     </table>
     <h5>11 - Are you aware of some issues in which code smells are harmful to the software quality? If yes, could you please describe it below or put the issue link?</h5>
@@ -201,1142 +201,1005 @@
         font-weight: bold;
       }
     </style>
-    <table class="tableizer-table">
-    <thead><tr class="tableizer-firstrow"><th>Smell</th><th>Algorithm</th><th>Smells</th><th>Harmful</th><th>Mean</th></tr></thead><tbody>
+    <style type="text/css">
+      .tg  {border-collapse:collapse;border-spacing:0;}
+      .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+      .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+      .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+      .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+      .tg .tg-0lax{text-align:left;vertical-align:top}
+    </style>
+    <table class="tg">
       <tr>
-        <td class="tg-0lax">Long Statement</td>
+        <th class="tg-1wig">Algorithm</th>
+        <th class="tg-1wig">Smell</th>
+        <th class="tg-1wig">Harmful</th>
+      </tr>
+      <tr>
+        <td class="tg-amwm" colspan="3">Switch Statements</td>
+      </tr>
+      <tr>
         <td class="tg-0lax">KNeighborsClassifier</td>
-        <td class="tg-0lax">0,80</td>
-        <td class="tg-0lax">0,92</td>
-        <td class="tg-0lax">0,86</td>
+        <td class="tg-0lax">0.29</td>
+        <td class="tg-0lax">0.80</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">RandomForestClassifier</td>
-        <td class="tg-0lax">0,73</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,87</td>
+        <td class="tg-0lax">0.25</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">DecisionTreeClassifier</td>
-        <td class="tg-0lax">0,60</td>
-        <td class="tg-0lax">0,96</td>
-        <td class="tg-0lax">0,78</td>
+        <td class="tg-0lax">0.50</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">AdaBoostClassifier</td>
-        <td class="tg-0lax">0,30</td>
-        <td class="tg-0lax">0,73</td>
-        <td class="tg-0lax">0,52</td>
+        <td class="tg-0lax">0.33</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">GradientBoostingClassifier</td>
-        <td class="tg-0lax">0,85</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,93</td>
+        <td class="tg-0lax">0.25</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">GaussianNB</td>
-        <td class="tg-0lax">0,59</td>
-        <td class="tg-0lax">0,67</td>
-        <td class="tg-0lax">0,63</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Deficient Encapsulation</td>
-        <td class="tg-0lax">KNeighborsClassifier</td>
-        <td class="tg-0lax">0,59</td>
-        <td class="tg-0lax">0,87</td>
-        <td class="tg-0lax">0,73</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">RandomForestClassifier</td>
-        <td class="tg-0lax">0,68</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,84</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">DecisionTreeClassifier</td>
-        <td class="tg-0lax">0,63</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,82</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">AdaBoostClassifier</td>
-        <td class="tg-0lax">0,57</td>
-        <td class="tg-0lax">0,73</td>
-        <td class="tg-0lax">0,65</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">GradientBoostingClassifier</td>
-        <td class="tg-0lax">0,62</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,81</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">GaussianNB</td>
-        <td class="tg-0lax">0,52</td>
-        <td class="tg-0lax">0,54</td>
-        <td class="tg-0lax">0,53</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">SVM</td>
-        <td class="tg-0lax">0,63</td>
-        <td class="tg-0lax">0,91</td>
-        <td class="tg-0lax">0,77</td>
+        <td class="tg-0lax">0.50</td>
+        <td class="tg-0lax">0.89</td>
       </tr>
       <tr>
-        <td class="tg-0lax">Cyclic-Dependent Modularization</td>
-        <td class="tg-0lax">KNeighborsClassifier</td>
-        <td class="tg-0lax">0,55</td>
-        <td class="tg-0lax">0,79</td>
-        <td class="tg-0lax">0,67</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">RandomForestClassifier</td>
-        <td class="tg-0lax">0,62</td>
-        <td class="tg-0lax">0,88</td>
-        <td class="tg-0lax">0,75</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">DecisionTreeClassifier</td>
-        <td class="tg-0lax">0,40</td>
-        <td class="tg-0lax">0,90</td>
-        <td class="tg-0lax">0,65</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">AdaBoostClassifier</td>
-        <td class="tg-0lax">0,67</td>
-        <td class="tg-0lax">0,76</td>
-        <td class="tg-0lax">0,72</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">GradientBoostingClassifier</td>
-        <td class="tg-0lax">0,56</td>
-        <td class="tg-0lax">0,90</td>
-        <td class="tg-0lax">0,73</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">GaussianNB</td>
-        <td class="tg-0lax">0,42</td>
-        <td class="tg-0lax">0,54</td>
-        <td class="tg-0lax">0,48</td>
+        <td class="tg-0lax">0.50</td>
+        <td class="tg-0lax">0.86</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">SVM</td>
-        <td class="tg-0lax">0,46</td>
-        <td class="tg-0lax">0,80</td>
-        <td class="tg-0lax">0,63</td>
+        <td class="tg-1wig">MIN</td>
+        <td class="tg-0lax">0.25</td>
+        <td class="tg-0lax">0.80</td>
       </tr>
       <tr>
-        <td class="tg-0lax">Broken Hierarchy</td>
+        <td class="tg-1wig">MAX</td>
+        <td class="tg-0lax">0.50</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-amwm" colspan="3">Magic Number</td>
+      </tr>
+      <tr>
         <td class="tg-0lax">KNeighborsClassifier</td>
-        <td class="tg-0lax">0,00</td>
-        <td class="tg-0lax">0.5</td>
-        <td class="tg-0lax">0,50</td>
+        <td class="tg-0lax">0.50</td>
+        <td class="tg-0lax">0.73</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">RandomForestClassifier</td>
-        <td class="tg-0lax">0,00</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,50</td>
+        <td class="tg-0lax">0.80</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">DecisionTreeClassifier</td>
-        <td class="tg-0lax">0,00</td>
-        <td class="tg-0lax">0,50</td>
-        <td class="tg-0lax">0,25</td>
+        <td class="tg-0lax">0.67</td>
+        <td class="tg-0lax">0.96</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">AdaBoostClassifier</td>
-        <td class="tg-0lax">0,00</td>
-        <td class="tg-0lax">0,50</td>
-        <td class="tg-0lax">0,25</td>
+        <td class="tg-0lax">0.56</td>
+        <td class="tg-0lax">0.85</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">GradientBoostingClassifier</td>
-        <td class="tg-0lax">0,00</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,50</td>
+        <td class="tg-0lax">0.72</td>
+        <td class="tg-0lax">0.93</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">GaussianNB</td>
-        <td class="tg-0lax">0,00</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,50</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">SVM</td>
-        <td class="tg-0lax">0,00</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,50</td>
+        <td class="tg-0lax">0.72</td>
+        <td class="tg-0lax">0.80</td>
       </tr>
       <tr>
-        <td class="tg-0lax">Long Parameter List</td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0.25</td>
+        <td class="tg-0lax">0.68</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MIN</td>
+        <td class="tg-0lax">0.25</td>
+        <td class="tg-0lax">0.68</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MAX</td>
+        <td class="tg-0lax">0.80</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-amwm" colspan="3">Long Identifier</td>
+      </tr>
+      <tr>
         <td class="tg-0lax">KNeighborsClassifier</td>
-        <td class="tg-0lax">0,80</td>
-        <td class="tg-0lax">0,93</td>
-        <td class="tg-0lax">0,87</td>
+        <td class="tg-0lax">0.67</td>
+        <td class="tg-0lax">0.80</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">RandomForestClassifier</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0.75</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">DecisionTreeClassifier</td>
-        <td class="tg-0lax">0,82</td>
-        <td class="tg-0lax">0,92</td>
-        <td class="tg-0lax">0,87</td>
+        <td class="tg-0lax">0.75</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">AdaBoostClassifier</td>
-        <td class="tg-0lax">0,92</td>
-        <td class="tg-0lax">0,93</td>
-        <td class="tg-0lax">0,93</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">GradientBoostingClassifier</td>
-        <td class="tg-0lax">0,92</td>
-        <td class="tg-0lax">0,93</td>
-        <td class="tg-0lax">0,93</td>
+        <td class="tg-0lax">0.75</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">GaussianNB</td>
-        <td class="tg-0lax">0,86</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,93</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">SVM</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0.67</td>
+        <td class="tg-0lax">0.80</td>
       </tr>
       <tr>
-        <td class="tg-0lax">Magic Number</td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0.33</td>
+        <td class="tg-0lax">0.86</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MIN</td>
+        <td class="tg-0lax">0.33</td>
+        <td class="tg-0lax">0.80</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MAX</td>
+        <td class="tg-0lax">0.75</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-amwm" colspan="3">Insufficient Modularization</td>
+      </tr>
+      <tr>
         <td class="tg-0lax">KNeighborsClassifier</td>
-        <td class="tg-0lax">0,44</td>
-        <td class="tg-0lax">0,84</td>
-        <td class="tg-0lax">0,64</td>
+        <td class="tg-0lax">0.64</td>
+        <td class="tg-0lax">0.90</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">RandomForestClassifier</td>
-        <td class="tg-0lax">0,80</td>
-        <td class="tg-0lax">0,96</td>
-        <td class="tg-0lax">0,88</td>
+        <td class="tg-0lax">0.60</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">DecisionTreeClassifier</td>
-        <td class="tg-0lax">0,97</td>
-        <td class="tg-0lax">0,96</td>
-        <td class="tg-0lax">0,97</td>
+        <td class="tg-0lax">0.50</td>
+        <td class="tg-0lax">0.97</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">AdaBoostClassifier</td>
-        <td class="tg-0lax">0,57</td>
-        <td class="tg-0lax">0,69</td>
-        <td class="tg-0lax">0,63</td>
+        <td class="tg-0lax">0.60</td>
+        <td class="tg-0lax">0.97</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">GradientBoostingClassifier</td>
-        <td class="tg-0lax">0,90</td>
-        <td class="tg-0lax">0,96</td>
-        <td class="tg-0lax">0,93</td>
+        <td class="tg-0lax">0.57</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">GaussianNB</td>
-        <td class="tg-0lax">0,11</td>
-        <td class="tg-0lax">0,58</td>
-        <td class="tg-0lax">0,35</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">SVM</td>
-        <td class="tg-0lax">0,45</td>
-        <td class="tg-0lax">0,79</td>
-        <td class="tg-0lax">0,62</td>
+        <td class="tg-0lax">0.69</td>
+        <td class="tg-0lax">0.93</td>
       </tr>
       <tr>
-        <td class="tg-0lax">Insufficient Modularization</td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0.67</td>
+        <td class="tg-0lax">0.62</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MIN</td>
+        <td class="tg-0lax">0.50</td>
+        <td class="tg-0lax">0.62</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MAX</td>
+        <td class="tg-0lax">0.69</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-amwm" colspan="3">Long Parameter List</td>
+      </tr>
+      <tr>
         <td class="tg-0lax">KNeighborsClassifier</td>
-        <td class="tg-0lax">0,55</td>
-        <td class="tg-0lax">0,80</td>
-        <td class="tg-0lax">0,68</td>
+        <td class="tg-0lax">0.92</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">RandomForestClassifier</td>
-        <td class="tg-0lax">0,52</td>
-        <td class="tg-0lax">0,90</td>
-        <td class="tg-0lax">0,71</td>
+        <td class="tg-0lax">0.93</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">DecisionTreeClassifier</td>
-        <td class="tg-0lax">0,59</td>
-        <td class="tg-0lax">0,93</td>
-        <td class="tg-0lax">0,76</td>
+        <td class="tg-0lax">0.78</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">AdaBoostClassifier</td>
-        <td class="tg-0lax">0,48</td>
-        <td class="tg-0lax">0,80</td>
-        <td class="tg-0lax">0,64</td>
+        <td class="tg-0lax">0.93</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">GradientBoostingClassifier</td>
-        <td class="tg-0lax">0,62</td>
-        <td class="tg-0lax">0,93</td>
-        <td class="tg-0lax">0,78</td>
+        <td class="tg-0lax">1.00</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">GaussianNB</td>
-        <td class="tg-0lax">0,73</td>
-        <td class="tg-0lax">0,61</td>
-        <td class="tg-0lax">0,67</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">SVM</td>
-        <td class="tg-0lax">0,67</td>
-        <td class="tg-0lax">0,97</td>
-        <td class="tg-0lax">0,82</td>
+        <td class="tg-0lax">0.92</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax">Complex Method</td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0.92</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MIN</td>
+        <td class="tg-0lax">0.78</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MAX</td>
+        <td class="tg-0lax">1.00</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-amwm" colspan="3">Unutilized Abstraction</td>
+      </tr>
+      <tr>
         <td class="tg-0lax">KNeighborsClassifier</td>
-        <td class="tg-0lax">0,50</td>
-        <td class="tg-0lax">0,75</td>
-        <td class="tg-0lax">0,63</td>
+        <td class="tg-0lax">0.70</td>
+        <td class="tg-0lax">0.80</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">RandomForestClassifier</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,86</td>
-        <td class="tg-0lax">0,93</td>
+        <td class="tg-0lax">0.81</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">DecisionTreeClassifier</td>
-        <td class="tg-0lax">0,50</td>
-        <td class="tg-0lax">0,75</td>
-        <td class="tg-0lax">0,63</td>
+        <td class="tg-0lax">0.72</td>
+        <td class="tg-0lax">0.96</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">AdaBoostClassifier</td>
-        <td class="tg-0lax">0,80</td>
-        <td class="tg-0lax">0,86</td>
-        <td class="tg-0lax">0,83</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">GradientBoostingClassifier</td>
-        <td class="tg-0lax">0,86</td>
-        <td class="tg-0lax">0,86</td>
-        <td class="tg-0lax">0,86</td>
+        <td class="tg-0lax">0.86</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">GaussianNB</td>
-        <td class="tg-0lax">0,80</td>
-        <td class="tg-0lax">0,86</td>
-        <td class="tg-0lax">0,83</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">SVM</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,86</td>
-        <td class="tg-0lax">0,93</td>
+        <td class="tg-0lax">0.63</td>
+        <td class="tg-0lax">0.88</td>
       </tr>
       <tr>
-        <td class="tg-0lax">Unutilized Abstraction</td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0.55</td>
+        <td class="tg-0lax">0.70</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MIN</td>
+        <td class="tg-0lax">0.55</td>
+        <td class="tg-0lax">0.70</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MAX</td>
+        <td class="tg-0lax">0.86</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-amwm" colspan="3">Cyclic-Dependent Modularization</td>
+      </tr>
+      <tr>
         <td class="tg-0lax">KNeighborsClassifier</td>
-        <td class="tg-0lax">0,61</td>
-        <td class="tg-0lax">0,50</td>
-        <td class="tg-0lax">0,56</td>
+        <td class="tg-0lax">0.50</td>
+        <td class="tg-0lax">0.74</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">RandomForestClassifier</td>
-        <td class="tg-0lax">0,73</td>
-        <td class="tg-0lax">0,94</td>
-        <td class="tg-0lax">0,84</td>
+        <td class="tg-0lax">0.67</td>
+        <td class="tg-0lax">0.97</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">DecisionTreeClassifier</td>
-        <td class="tg-0lax">0,63</td>
-        <td class="tg-0lax">0,96</td>
-        <td class="tg-0lax">0,80</td>
+        <td class="tg-0lax">0.67</td>
+        <td class="tg-0lax">0.97</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">AdaBoostClassifier</td>
-        <td class="tg-0lax">0,72</td>
-        <td class="tg-0lax">0,86</td>
-        <td class="tg-0lax">0,79</td>
+        <td class="tg-0lax">0.61</td>
+        <td class="tg-0lax">0.88</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">GradientBoostingClassifier</td>
-        <td class="tg-0lax">0,62</td>
-        <td class="tg-0lax">0,94</td>
-        <td class="tg-0lax">0,78</td>
+        <td class="tg-0lax">0.71</td>
+        <td class="tg-0lax">0.97</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">GaussianNB</td>
-        <td class="tg-0lax">0,65</td>
-        <td class="tg-0lax">0,64</td>
-        <td class="tg-0lax">0,65</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">SVM</td>
-        <td class="tg-0lax">0,58</td>
-        <td class="tg-0lax">0,64</td>
-        <td class="tg-0lax">0,61</td>
+        <td class="tg-0lax">0.45</td>
+        <td class="tg-0lax">0.88</td>
       </tr>
       <tr>
-        <td class="tg-0lax">Long Identifier</td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0.52</td>
+        <td class="tg-0lax">0.58</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MIN</td>
+        <td class="tg-0lax">0.45</td>
+        <td class="tg-0lax">0.58</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MAX</td>
+        <td class="tg-0lax">0.71</td>
+        <td class="tg-0lax">0.97</td>
+      </tr>
+      <tr>
+        <td class="tg-amwm" colspan="3">Deficient Encapsulation</td>
+      </tr>
+      <tr>
         <td class="tg-0lax">KNeighborsClassifier</td>
-        <td class="tg-0lax">0,40</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,70</td>
+        <td class="tg-0lax">0.73</td>
+        <td class="tg-0lax">0.90</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">RandomForestClassifier</td>
-        <td class="tg-0lax">0,89</td>
-        <td class="tg-0lax">0,89</td>
-        <td class="tg-0lax">0,89</td>
+        <td class="tg-0lax">0.65</td>
+        <td class="tg-0lax">0.98</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">DecisionTreeClassifier</td>
-        <td class="tg-0lax">0,29</td>
-        <td class="tg-0lax">0,83</td>
-        <td class="tg-0lax">0,56</td>
+        <td class="tg-0lax">0.61</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">AdaBoostClassifier</td>
-        <td class="tg-0lax">0,75</td>
-        <td class="tg-0lax">0,89</td>
-        <td class="tg-0lax">0,82</td>
+        <td class="tg-0lax">0.67</td>
+        <td class="tg-0lax">0.83</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">GradientBoostingClassifier</td>
-        <td class="tg-0lax">0,75</td>
-        <td class="tg-0lax">0,89</td>
-        <td class="tg-0lax">0,82</td>
+        <td class="tg-0lax">0.63</td>
+        <td class="tg-0lax">0.98</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">GaussianNB</td>
-        <td class="tg-0lax">0,67</td>
-        <td class="tg-0lax">0,50</td>
-        <td class="tg-0lax">0,59</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">SVM</td>
-        <td class="tg-0lax">0,57</td>
-        <td class="tg-0lax">0,89</td>
-        <td class="tg-0lax"></td>
+        <td class="tg-0lax">0.70</td>
+        <td class="tg-0lax">0.96</td>
       </tr>
       <tr>
-        <td class="tg-0lax">Empty catch clause</td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0.56</td>
+        <td class="tg-0lax">0.55</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MIN</td>
+        <td class="tg-0lax">0.56</td>
+        <td class="tg-0lax">0.55</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MAX</td>
+        <td class="tg-0lax">0.73</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-amwm" colspan="3">Long Method</td>
+      </tr>
+      <tr>
         <td class="tg-0lax">KNeighborsClassifier</td>
-        <td class="tg-0lax">0,66</td>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">0,66</td>
+        <td class="tg-0lax">0.40</td>
+        <td class="tg-0lax">0.75</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">RandomForestClassifier</td>
-        <td class="tg-0lax">0,00</td>
-        <td class="tg-0lax">0,86</td>
-        <td class="tg-0lax">0,43</td>
+        <td class="tg-0lax">0.75</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">DecisionTreeClassifier</td>
-        <td class="tg-0lax">0,50</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,75</td>
+        <td class="tg-0lax">0.29</td>
+        <td class="tg-0lax">0.86</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">AdaBoostClassifier</td>
-        <td class="tg-0lax">0,00</td>
-        <td class="tg-0lax">0,75</td>
-        <td class="tg-0lax">0,38</td>
+        <td class="tg-0lax">0.86</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">GradientBoostingClassifier</td>
-        <td class="tg-0lax">0,50</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,75</td>
+        <td class="tg-0lax">0.86</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">GaussianNB</td>
-        <td class="tg-0lax">0,00</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,50</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">SVM</td>
-        <td class="tg-0lax">0,50</td>
-        <td class="tg-0lax">0,86</td>
-        <td class="tg-0lax"></td>
+        <td class="tg-0lax">0.50</td>
+        <td class="tg-0lax">0.75</td>
       </tr>
       <tr>
-        <td class="tg-0lax">Switch Statements</td>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0.86</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MIN</td>
+        <td class="tg-0lax">0.29</td>
+        <td class="tg-0lax">0.75</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MAX</td>
+        <td class="tg-0lax">0.86</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-amwm" colspan="3">Long Statement</td>
+      </tr>
+      <tr>
         <td class="tg-0lax">KNeighborsClassifier</td>
-        <td class="tg-0lax">0,50</td>
-        <td class="tg-0lax">0,89</td>
-        <td class="tg-0lax">0,70</td>
+        <td class="tg-0lax">0.79</td>
+        <td class="tg-0lax">0.96</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">RandomForestClassifier</td>
-        <td class="tg-0lax">0,67</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,84</td>
+        <td class="tg-0lax">0.86</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">DecisionTreeClassifier</td>
-        <td class="tg-0lax">0,44</td>
-        <td class="tg-0lax">0,75</td>
-        <td class="tg-0lax">0,60</td>
+        <td class="tg-0lax">0.81</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">AdaBoostClassifier</td>
-        <td class="tg-0lax">0,67</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,84</td>
+        <td class="tg-0lax">0.64</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">GradientBoostingClassifier</td>
-        <td class="tg-0lax">0,75</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">0,88</td>
+        <td class="tg-0lax">0.86</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
       <tr>
-        <td class="tg-0lax"></td>
-        <td class="tg-0lax">GaussianNB</td>
-        <td class="tg-0lax">0,29</td>
-        <td class="tg-0lax">0,89</td>
-        <td class="tg-0lax">0,59</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax"></td>
         <td class="tg-0lax">SVM</td>
-        <td class="tg-0lax">0,86</td>
-        <td class="tg-0lax">1,00</td>
-        <td class="tg-0lax">1,00</td>
+        <td class="tg-0lax">0.75</td>
+        <td class="tg-0lax">1.00</td>
       </tr>
-    </tbody></table>
+      <tr>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0.13</td>
+        <td class="tg-0lax">0.75</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MIN</td>
+        <td class="tg-0lax">0.13</td>
+        <td class="tg-0lax">0.75</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MAX</td>
+        <td class="tg-0lax">0.86</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-amwm" colspan="3">Empty Catch Clause</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">KNeighborsClassifier</td>
+        <td class="tg-0lax">0.86</td>
+        <td class="tg-0lax">0.86</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">RandomForestClassifier</td>
+        <td class="tg-0lax">0.50</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">DecisionTreeClassifier</td>
+        <td class="tg-0lax">0.00</td>
+        <td class="tg-0lax">0.86</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">AdaBoostClassifier</td>
+        <td class="tg-0lax">0.00</td>
+        <td class="tg-0lax">0.86</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">GradientBoostingClassifier</td>
+        <td class="tg-0lax">0.44</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">SVM</td>
+        <td class="tg-0lax">1.00</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-0lax">GaussianNB</td>
+        <td class="tg-0lax">0.00</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MIN</td>
+        <td class="tg-0lax">0.00</td>
+        <td class="tg-0lax">0.86</td>
+      </tr>
+      <tr>
+        <td class="tg-1wig">MAX</td>
+        <td class="tg-0lax">1.00</td>
+        <td class="tg-0lax">1.00</td>
+      </tr>
+    </table>
     </br>
     </br>
     
     <h3>Results RQ4 (Which metrics are most influential on detecting harmful code?):</h3>
-    <table class="tableizer-table">
-      <tr>
-        <th class="tg-0lax">Smell</th>
-        <th class="tg-0lax">win feature</th>
-        <th class="tg-0lax">abstract_methods</th>
-        <th class="tg-0lax">annonymous_classes_qty</th>
-        <th class="tg-0lax">assignments_qty</th>
-        <th class="tg-0lax">cbo</th>
-        <th class="tg-0lax">dit</th>
-        <th class="tg-0lax">final_fields</th>
-        <th class="tg-0lax">final_methods</th>
-        <th class="tg-0lax">lambdas_qty</th>
-        <th class="tg-0lax">lcom</th>
-        <th class="tg-0lax">line</th>
-        <th class="tg-0lax">loc</th>
-        <th class="tg-0lax">math_operations_qty</th>
-        <th class="tg-0lax">max_nested_blocks</th>
-        <th class="tg-0lax">median_files</th>
-        <th class="tg-0lax">number_commits</th>
-        <th class="tg-0lax">number_days</th>
-        <th class="tg-0lax">number_tests</th>
-        <th class="tg-0lax">numbers_qty</th>
-        <th class="tg-0lax">parameters</th>
-        <th class="tg-0lax">parenthesized_exps_qty</th>
-        <th class="tg-0lax">private_fields</th>
-        <th class="tg-0lax">private_methods</th>
-        <th class="tg-0lax">protected_fields</th>
-        <th class="tg-0lax">protected_methods</th>
-        <th class="tg-0lax">public_fields</th>
-        <th class="tg-0lax">public_methods</th>
-        <th class="tg-0lax">returns</th>
-        <th class="tg-0lax">rfc</th>
-        <th class="tg-0lax">static_fields</th>
-        <th class="tg-0lax">static_methods</th>
-        <th class="tg-0lax">string_literals_qty</th>
-        <th class="tg-0lax">sub_classes_qty</th>
-        <th class="tg-0lax">synchronized_methods</th>
-        <th class="tg-0lax">total_fields</th>
-        <th class="tg-0lax">total_methods</th>
-        <th class="tg-0lax">unique_words_qty</th>
-        <th class="tg-0lax">variables</th>
-        <th class="tg-0lax">wmc</th>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Long Parameter List</td>
-        <td class="tg-0lax">assignments_qty</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,002596102719</td>
-        <td class="tg-0lax">0,0001</td>
-        <td class="tg-0lax">0,0074</td>
-        <td class="tg-0lax">0,0016</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0012</td>
-        <td class="tg-0lax">0,0019</td>
-        <td class="tg-0lax">0,0002</td>
-        <td class="tg-0lax">0,0388</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0002</td>
-        <td class="tg-0lax">0,0016</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,2434</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,002482708304</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,003580103001</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Magic Number</td>
-        <td class="tg-0lax">cbo</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,01784546452</td>
-        <td class="tg-0lax">0,0324</td>
-        <td class="tg-0lax">0,0697</td>
-        <td class="tg-0lax">0,0012</td>
-        <td class="tg-0lax">0,0005</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0025</td>
-        <td class="tg-0lax">0,0020</td>
-        <td class="tg-0lax">0,0563</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0071</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0022</td>
-        <td class="tg-0lax">0,0080</td>
-        <td class="tg-0lax">0,0019</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0063</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0025</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0010</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,001766398259</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,06504195516</td>
-        <td class="tg-0lax">0,02148389981</td>
-        <td class="tg-0lax">0,0007871544453</td>
-        <td class="tg-0lax">0,001685419529</td>
-        <td class="tg-0lax">0,009912303158</td>
-        <td class="tg-0lax">0,00126145993</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,001442509295</td>
-        <td class="tg-0lax">0,03422648011</td>
-        <td class="tg-0lax">0,01131778222</td>
-        <td class="tg-0lax">0,00473745198</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Switch Statements</td>
-        <td class="tg-0lax">cbo</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,02926738641</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,1504</td>
-        <td class="tg-0lax">0,0059</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0064</td>
-        <td class="tg-0lax">0,0144</td>
-        <td class="tg-0lax">0,0578</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0074</td>
-        <td class="tg-0lax">0,0058</td>
-        <td class="tg-0lax">0,0103</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0108</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0072</td>
-        <td class="tg-0lax">0,0046</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,003803663876</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,004098251699</td>
-        <td class="tg-0lax">0,003387790998</td>
-        <td class="tg-0lax">0,009155312078</td>
-        <td class="tg-0lax">0,005692201305</td>
-        <td class="tg-0lax">0,007576066598</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,01570598895</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,00847736986</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Empty catch clause</td>
-        <td class="tg-0lax">cbo</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,007943129978</td>
-        <td class="tg-0lax">0,0209</td>
-        <td class="tg-0lax">0,1036</td>
-        <td class="tg-0lax">0,0022</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0035</td>
-        <td class="tg-0lax">0,0390</td>
-        <td class="tg-0lax">0,0097</td>
-        <td class="tg-0lax">0,0033</td>
-        <td class="tg-0lax">0,0592</td>
-        <td class="tg-0lax">0,0091</td>
-        <td class="tg-0lax">0,0039</td>
-        <td class="tg-0lax">0,0015</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0105</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0020</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,02820788915</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,01330766527</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,003820932846</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,04034103318</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Unutilized Abstraction</td>
-        <td class="tg-0lax">line</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,0006338525151</td>
-        <td class="tg-0lax">0,0070</td>
-        <td class="tg-0lax">0,0471</td>
-        <td class="tg-0lax">0,0104</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0010</td>
-        <td class="tg-0lax">0,0003</td>
-        <td class="tg-0lax">0,1187</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0005</td>
-        <td class="tg-0lax">0,0039</td>
-        <td class="tg-0lax">0,0018</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0042</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0003</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0003</td>
-        <td class="tg-0lax">0,001882948191</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,01740217916</td>
-        <td class="tg-0lax">0,04690772999</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,002224002284</td>
-        <td class="tg-0lax">0,02460431333</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,001597895365</td>
-        <td class="tg-0lax">0,009488010525</td>
-        <td class="tg-0lax">0,04455879393</td>
-        <td class="tg-0lax">0,01393914268</td>
-        <td class="tg-0lax">0,01028239255</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Long Statement</td>
-        <td class="tg-0lax">loc</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,01706197106</td>
-        <td class="tg-0lax">0,0252</td>
-        <td class="tg-0lax">0,0194</td>
-        <td class="tg-0lax">0,0054</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0074</td>
-        <td class="tg-0lax">0,0070</td>
-        <td class="tg-0lax">0,0354</td>
-        <td class="tg-0lax">0,0483</td>
-        <td class="tg-0lax">0,0347</td>
-        <td class="tg-0lax">0,0137</td>
-        <td class="tg-0lax">0,0066</td>
-        <td class="tg-0lax">0,0049</td>
-        <td class="tg-0lax">0,0054</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0232</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0047</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0033</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,02644161278</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,01469335932</td>
-        <td class="tg-0lax">0,003489426355</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,006388917129</td>
-        <td class="tg-0lax">0,009582210785</td>
-        <td class="tg-0lax">0,02457753413</td>
-        <td class="tg-0lax">0,009165393531</td>
-        <td class="tg-0lax">0,01212702814</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Broken Hierarchy</td>
-        <td class="tg-0lax">number_tests</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,007533836682</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0336</td>
-        <td class="tg-0lax">0,0070</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0130</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0605</td>
-        <td class="tg-0lax">0,0063</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0246</td>
-        <td class="tg-0lax">0,0502</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,1051</td>
-        <td class="tg-0lax">0,0068</td>
-        <td class="tg-0lax">0,0158</td>
-        <td class="tg-0lax">0,0104</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,01758387566</td>
-        <td class="tg-0lax">0,02255164962</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,02761263202</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,007126752202</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Long Identifier</td>
-        <td class="tg-0lax">returns</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0083</td>
-        <td class="tg-0lax">0,0051</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0052</td>
-        <td class="tg-0lax">0,0110</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0445</td>
-        <td class="tg-0lax">0,0107</td>
-        <td class="tg-0lax">0,0137</td>
-        <td class="tg-0lax">0,0319</td>
-        <td class="tg-0lax">0,0253</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0313</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0080</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0131</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,1252356057</td>
-        <td class="tg-0lax">0,01645671064</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,003099838913</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,01452786156</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,03880139553</td>
-        <td class="tg-0lax">0,009158669931</td>
-        <td class="tg-0lax">0,01546093687</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Insufficient Modularization</td>
-        <td class="tg-0lax">unique_words_qty</td>
-        <td class="tg-0lax">0,0002946555658</td>
-        <td class="tg-0lax">0,002966012324</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0434</td>
-        <td class="tg-0lax">0,0040</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0011</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0010</td>
-        <td class="tg-0lax">0,0583</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0021</td>
-        <td class="tg-0lax">0,0079</td>
-        <td class="tg-0lax">0,0033</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0091</td>
-        <td class="tg-0lax">0,0050</td>
-        <td class="tg-0lax">0,0003</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0004</td>
-        <td class="tg-0lax">0,0016</td>
-        <td class="tg-0lax">0,0029</td>
-        <td class="tg-0lax">0,0004990653883</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,03103296028</td>
-        <td class="tg-0lax">0,05589334215</td>
-        <td class="tg-0lax">0,0001062822715</td>
-        <td class="tg-0lax">0,0001238038913</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,0007621139172</td>
-        <td class="tg-0lax">0,001820251978</td>
-        <td class="tg-0lax">0,008716929737</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,063085921</td>
-        <td class="tg-0lax">0,06055625677</td>
-        <td class="tg-0lax">0,02081575887</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Cyclic-Dependent Modularization</td>
-        <td class="tg-0lax">unique_words_qty</td>
-        <td class="tg-0lax">0,003764458789</td>
-        <td class="tg-0lax">0,004656835115</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0386</td>
-        <td class="tg-0lax">0,0047</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0014</td>
-        <td class="tg-0lax">0,0027</td>
-        <td class="tg-0lax">0,0038</td>
-        <td class="tg-0lax">0,0248</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0032</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0027</td>
-        <td class="tg-0lax">0,0079</td>
-        <td class="tg-0lax">0,0128</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0026</td>
-        <td class="tg-0lax">0,0085</td>
-        <td class="tg-0lax">0,0029</td>
-        <td class="tg-0lax">0,0038</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,003109442314</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,06228861648</td>
-        <td class="tg-0lax">0,0193287433</td>
-        <td class="tg-0lax">0,002142238269</td>
-        <td class="tg-0lax">0,001737007583</td>
-        <td class="tg-0lax">0,009167691401</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,004780560399</td>
-        <td class="tg-0lax">0,002305802136</td>
-        <td class="tg-0lax">0,007069147699</td>
-        <td class="tg-0lax">0,07921127346</td>
-        <td class="tg-0lax">0,0356514147</td>
-        <td class="tg-0lax">0,04483235382</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Complex Method</td>
-        <td class="tg-0lax">unique_words_qty</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,008799575127</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0009</td>
-        <td class="tg-0lax">0,0002</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0095</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0005</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0007</td>
-        <td class="tg-0lax">0,0005</td>
-        <td class="tg-0lax">0,0003</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0005</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0008</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">9,97E-05</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,00643037336</td>
-        <td class="tg-0lax">0,003420842095</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,0008548492337</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,02806482355</td>
-        <td class="tg-0lax">0,008669426094</td>
-        <td class="tg-0lax">0,005846420364</td>
-      </tr>
-      <tr>
-        <td class="tg-0lax">Deficient Encapsulation</td>
-        <td class="tg-0lax">wmc</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,005272540351</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0534</td>
-        <td class="tg-0lax">0,0040</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0016</td>
-        <td class="tg-0lax">0,0028</td>
-        <td class="tg-0lax">0,0516</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0037</td>
-        <td class="tg-0lax">0,0031</td>
-        <td class="tg-0lax">0,0027</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0000</td>
-        <td class="tg-0lax">0,0175</td>
-        <td class="tg-0lax">0,0064</td>
-        <td class="tg-0lax">0,0032</td>
-        <td class="tg-0lax">0,0035</td>
-        <td class="tg-0lax">0,0037</td>
-        <td class="tg-0lax">0,0030</td>
-        <td class="tg-0lax">0,008202344957</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,03600258846</td>
-        <td class="tg-0lax">0,04042475189</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,00213791514</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,0033954416</td>
-        <td class="tg-0lax">0,00220217052</td>
-        <td class="tg-0lax">0,005265277733</td>
-        <td class="tg-0lax">0</td>
-        <td class="tg-0lax">0,02734842837</td>
-        <td class="tg-0lax">0,01133853864</td>
-        <td class="tg-0lax">0,07563527464</td>
-      </tr>
-    </table>
+    <style type="text/css">
+      .tg  {border-collapse:collapse;border-spacing:0;}
+      .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+      .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+      .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+      .tg .tg-7btt{font-weight:bold;border-color:inherit;text-align:center;vertical-align:top}
+      .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+      </style>
+      <table class="tg">
+        <tr>
+          <th class="tg-7btt">Smell</th>
+          <th class="tg-7btt">Feature</th>
+          <th class="tg-7btt">Harmful</th>
+        </tr>
+        <tr>
+          <td class="tg-c3ow" rowspan="10">Cyclic-Dependent Modularization</td>
+          <td class="tg-0pky">returns</td>
+          <td class="tg-0pky">0.0699</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">variables</td>
+          <td class="tg-0pky">0.0408</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">unique_words_qty</td>
+          <td class="tg-0pky">0.0373</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">line</td>
+          <td class="tg-0pky">0.0321</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">numbers_qty</td>
+          <td class="tg-0pky">0.0213</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">string_literals_qty</td>
+          <td class="tg-0pky">0.0191</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">rfc</td>
+          <td class="tg-0pky">0.0170</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">cbo</td>
+          <td class="tg-0pky">0.0161</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">annonymous_classes_qty</td>
+          <td class="tg-0pky">0.0097</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">parameters</td>
+          <td class="tg-0pky">0.0064</td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow" rowspan="10">Deficient Encapsulation</td>
+          <td class="tg-0pky">wmc</td>
+          <td class="tg-0pky">0.0776</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">parameters</td>
+          <td class="tg-0pky">0.0709</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">unique_words_qty</td>
+          <td class="tg-0pky">0.0404</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">returns</td>
+          <td class="tg-0pky">0.0171</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">variables</td>
+          <td class="tg-0pky">0.0129</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">rfc</td>
+          <td class="tg-0pky">0.0119</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">line</td>
+          <td class="tg-0pky">0.0113</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">number_commits</td>
+          <td class="tg-0pky">0.0016</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">cbo</td>
+          <td class="tg-0pky">0.0014</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">total_methods</td>
+          <td class="tg-0pky">0.0011</td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow" rowspan="10">Empty Catch Clause</td>
+          <td class="tg-0pky">wmc</td>
+          <td class="tg-0pky">0.1467</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">rfc</td>
+          <td class="tg-0pky">0.0807</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">unique_words_qty</td>
+          <td class="tg-0pky">0.0371</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">cbo</td>
+          <td class="tg-0pky">0.0368</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">parameters</td>
+          <td class="tg-0pky">0.0281</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">line</td>
+          <td class="tg-0pky">0.0267</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">variables</td>
+          <td class="tg-0pky">0.0108</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">returns</td>
+          <td class="tg-0pky">0.0097</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">numbers_qty</td>
+          <td class="tg-0pky">0.0012</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">annonymous_classes_qty</td>
+          <td class="tg-0pky">0.0008</td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow" rowspan="9">Insuficient Modularization</td>
+          <td class="tg-0pky">wmc</td>
+          <td class="tg-0pky">0.0446</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">unique_words_qty</td>
+          <td class="tg-0pky">0.0329</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">rfc</td>
+          <td class="tg-0pky">0.0140</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">string_literals_qty</td>
+          <td class="tg-0pky">0.0072</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">variables</td>
+          <td class="tg-0pky">0.0051</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">total_methods</td>
+          <td class="tg-0pky">0.0019</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">total_fields</td>
+          <td class="tg-0pky">0.0012</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">sub_classes_qty</td>
+          <td class="tg-0pky">0.0007</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">static_methods</td>
+          <td class="tg-0pky">0.0002</td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow" rowspan="10">Long Identifier</td>
+          <td class="tg-0pky">math_operations_qty</td>
+          <td class="tg-0pky">0.1035</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">annonymous_classes_qty</td>
+          <td class="tg-0pky">0.0516</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">cbo</td>
+          <td class="tg-0pky">0.0494</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">rfc</td>
+          <td class="tg-0pky">0.0251</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">loc</td>
+          <td class="tg-0pky">0.0227</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">numbers_qty</td>
+          <td class="tg-0pky">0.0118</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">unique_words_qty</td>
+          <td class="tg-0pky">0.0074</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">line</td>
+          <td class="tg-0pky">0.0058</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">string_literals_qty</td>
+          <td class="tg-0pky">0.0028</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">variables</td>
+          <td class="tg-0pky">0.0009</td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow" rowspan="10">Long Method</td>
+          <td class="tg-0pky">wmc</td>
+          <td class="tg-0pky">0.0145</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">unique_words_qty</td>
+          <td class="tg-0pky">0.0261</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">string_literals_qty</td>
+          <td class="tg-0pky">0.0023</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">rfc</td>
+          <td class="tg-0pky">0.0187</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">returns</td>
+          <td class="tg-0pky">0.0257</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">numbers_qty</td>
+          <td class="tg-0pky">0.0119</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">number_days</td>
+          <td class="tg-0pky">0.0001</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">number_commits</td>
+          <td class="tg-0pky">0.0005</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">median_files</td>
+          <td class="tg-0pky">0.0002</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">loc</td>
+          <td class="tg-0pky">0.0938</td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow" rowspan="10">Long Parameter List</td>
+          <td class="tg-0pky">numbers_qty</td>
+          <td class="tg-0pky">0.1211</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">parameters</td>
+          <td class="tg-0pky">0.1176</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">loc</td>
+          <td class="tg-0pky">0.0671</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">wmc</td>
+          <td class="tg-0pky">0.0241</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">cbo</td>
+          <td class="tg-0pky">0.0146</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">parenthesized_exps_qty</td>
+          <td class="tg-0pky">0.0138</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">line</td>
+          <td class="tg-0pky">0.0121</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">rfc</td>
+          <td class="tg-0pky">0.0073</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">string_literals_qty</td>
+          <td class="tg-0pky">0.0039</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">max_nested_blocks</td>
+          <td class="tg-0pky">0.0002</td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow" rowspan="10">Long Statement</td>
+          <td class="tg-0pky">parameters</td>
+          <td class="tg-0pky">0.1951</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">line</td>
+          <td class="tg-0pky">0.0321</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">rfc</td>
+          <td class="tg-0pky">0.0180</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">variables</td>
+          <td class="tg-0pky">0.0151</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">wmc</td>
+          <td class="tg-0pky">0.0136</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">unique_words_qty</td>
+          <td class="tg-0pky">0.0104</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">math_operations_qty</td>
+          <td class="tg-0pky">0.0074</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">returns</td>
+          <td class="tg-0pky">0.0014</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">max_nested_blocks</td>
+          <td class="tg-0pky">0.0005</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">numbers_qty</td>
+          <td class="tg-0pky">0.0005</td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow" rowspan="10">Magic Number</td>
+          <td class="tg-0pky">cbo</td>
+          <td class="tg-0pky">0.0668</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">returns</td>
+          <td class="tg-0pky">0.0430</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">line</td>
+          <td class="tg-0pky">0.0396</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">annonymous_classes_qty</td>
+          <td class="tg-0pky">0.0316</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">rfc</td>
+          <td class="tg-0pky">0.0254</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">parameters</td>
+          <td class="tg-0pky">0.0210</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">numbers_qty</td>
+          <td class="tg-0pky">0.0188</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">wmc</td>
+          <td class="tg-0pky">0.0156</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">variables</td>
+          <td class="tg-0pky">0.0148</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">unique_words_qty</td>
+          <td class="tg-0pky">0.0118</td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow" rowspan="10">Switch Statements</td>
+          <td class="tg-0pky">math_operations_qty</td>
+          <td class="tg-0pky">0.2281</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">rfc</td>
+          <td class="tg-0pky">0.0000</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">wmc</td>
+          <td class="tg-0pky">0.0000</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">numbers_qty</td>
+          <td class="tg-0pky">0.0000</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">line</td>
+          <td class="tg-0pky">0.0000</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">unique_words_qty</td>
+          <td class="tg-0pky">0.0000</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">number_commits</td>
+          <td class="tg-0pky">0.0000</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">median_files</td>
+          <td class="tg-0pky">0.0000</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">cbo</td>
+          <td class="tg-0pky">0.0000</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">parameters</td>
+          <td class="tg-0pky">0.0000</td>
+        </tr>
+        <tr>
+          <td class="tg-c3ow" rowspan="10">Unutilized Abstraction</td>
+          <td class="tg-0pky">line</td>
+          <td class="tg-0pky">0.0723</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">unique_words_qty</td>
+          <td class="tg-0pky">0.0260</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">rfc</td>
+          <td class="tg-0pky">0.0243</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">cbo</td>
+          <td class="tg-0pky">0.0184</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">string_literals_qty</td>
+          <td class="tg-0pky">0.0179</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">math_operations_qty</td>
+          <td class="tg-0pky">0.0155</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">parameters</td>
+          <td class="tg-0pky">0.0088</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">variables</td>
+          <td class="tg-0pky">0.0060</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">wmc</td>
+          <td class="tg-0pky">0.0060</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">max_nested_blocks</td>
+          <td class="tg-0pky">0.0057</td>
+        </tr>
+      </table>
 
     </br>
     </br>
@@ -1431,7 +1294,7 @@
 
     <h3>Harmful Code Representation:</h3>
     </br>
-    <img src="img/harmful_code_query.png"/>
+    <img src="img/harmful_code_query_.png"/>
     </br></br></br>
 
     <h3>Study Design Effectiveness:</h3>
@@ -1451,7 +1314,7 @@
           <ul class="list-inline mb-2">
             
           </ul>
-          <p class="text-muted small mb-4 mb-lg-0">&copy; Harmful Code 2019. All Rights Reserved.</p>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; Harmful Code 2020. All Rights Reserved.</p>
         </div>
         <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
           
